@@ -9,7 +9,7 @@ ZebX Desktop Environment
 # min finds the minimum between two integers
 #==============================
 
-def BREAKING-STRING(L,l,m,i,j):
+def breakingString(L,l,m,i,j):
   n=j-i+1
   
   if (i > j) or (l > m):
@@ -23,13 +23,13 @@ def BREAKING-STRING(L,l,m,i,j):
     
     for k=l to m:
       if (k == m):
-        q = min(q, n+BREAKING-STRING(L,l,k-1,i,L[k])+BREAKING-STRING(L,m,m,L[k]+1,j))
+        q = min(q, n+breakingString(L,l,k-1,i,L[k])+breakingString(L,m,m,L[k]+1,j))
       
       elif (k==l):
-        q = min(q, n+BREAKING-STRING(L,l,l,i,L[k])+BREAKING-STRING(L,k+1,m,L[k]+1,j))
+        q = min(q, n+breakingString(L,l,l,i,L[k])+breakingString(L,k+1,m,L[k]+1,j))
   
   else:
-    q = min(q, n+BREAKING-STRING(L,l,k,i,L[k])+BREAKING-STRING(L,k+1,m,L[k]+1,j))
+    q = min(q, n+breakingString(L,l,k,i,L[k])+breakingString(L,k+1,m,L[k]+1,j))
   
   return q
   ```
