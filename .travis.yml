@@ -2,5 +2,5 @@ language: cpp
 copmiler
   - clang
   - gcc
-install: ./get-deps
-script: ./build
+install: ./get-deps.sh
+script: ./build.sh
