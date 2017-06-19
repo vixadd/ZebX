@@ -1,1 +1,6 @@
-
+language: cpp
+copmiler
+  - clang
+  - gcc
+install: ./get-deps
+script: ./build
