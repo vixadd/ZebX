@@ -1,6 +1,2 @@
-{
-  "language": "cpp",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
-}
+language:cpp
+script:./build.sh
