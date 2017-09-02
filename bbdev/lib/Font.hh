@@ -1,3 +1,4 @@
+//------------------------------BLACKBOX DISCLAIMER-----------------------------
 // -*- mode: C++; indent-tabs-mode: nil; c-basic-offset: 2; -*-
 // Font.hh for Blackbox - an X11 Window manager
 // Copyright (c) 2001 - 2005 Sean 'Shaleh' Perry <shaleh@debian.org>
@@ -21,6 +22,19 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
+//------------------------------BLACKBOX DISCLAIMER-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 #ifndef __Font_hh
 #define __Font_hh
