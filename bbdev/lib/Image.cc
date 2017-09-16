@@ -60,6 +60,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <cstring>
 
 // #define COLORTABLE_DEBUG
 // #define MITSHM_DEBUG
@@ -1363,7 +1364,7 @@ void bt::Image::hgradient(const Color &from, const Color &to,
 
     if (height > 1) {
       // second line
-      memcpy(p, data, width * sizeof(RGB));
+      std::memcpy(p, data, width * sizeof(RGB));
       p += width;
     }
   }
