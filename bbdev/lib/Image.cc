@@ -1,3 +1,4 @@
+//------------------------------BLACKBOX DISCLAIMER-----------------------------
 // -*- mode: C++; indent-tabs-mode: nil; c-basic-offset: 2; -*-
 // Image.cc for Blackbox - an X11 Window manager
 // Copyright (c) 2001 - 2005 Sean 'Shaleh' Perry <shaleh@debian.org>
@@ -21,6 +22,21 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
+//------------------------------BLACKBOX DISCLAIMER-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #include "Image.hh"
 #include "Display.hh"
@@ -44,6 +60,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <cstring>
 
 // #define COLORTABLE_DEBUG
 // #define MITSHM_DEBUG
@@ -1347,7 +1364,7 @@ void bt::Image::hgradient(const Color &from, const Color &to,
 
     if (height > 1) {
       // second line
-      memcpy(p, data, width * sizeof(RGB));
+      std::memcpy(p, data, width * sizeof(RGB));
       p += width;
     }
   }

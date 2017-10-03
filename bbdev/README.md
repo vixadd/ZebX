@@ -1,7 +1,8 @@
--- README for Blackbox - an X11 Window manager
+# Blackbox
+An X11 Window Manager
+<i>This is the README for Blackbox 0.62.x release.</i>
 
-This is the README for Blackbox 0.62.x release.
-
+## Source Tree
 The source tree for Blackbox is comprised of five subdirectories:
 
 	data/		- this holds the default data files that Blackbox
@@ -20,15 +21,16 @@ The source tree for Blackbox is comprised of five subdirectories:
 			  that help Blackbox do what it does best.
 
 
-Quick Start:
-------------
+## Quick Start:
 The quickest and easiest way to get Blackbox up and running is to run the
 following commands:
 
-# cd blackbox-version
-# ./configure
-# make
-# su -c 'make install'
+```bash
+cd blackbox-version
+./configure
+make
+su -c 'make install'
+```
 
 This will configure, compile and install Blackbox the quickest.  For those
 who like to spend the extra 15 seconds reading ./configure --help, some
@@ -37,16 +39,14 @@ compile time options can be turned on and off before the build.
 For general information on GNU's ./configure, see the file INSTALL.
 
 
-Configuring Blackbox:
----------------------
+## Configuring Blackbox:
 The next thing most users want to do after installing Blackbox is to configure
 the colors, fonts, menus, etc. to their liking.  This is covered by the files
 data/README, data/README.menu and data/README.style.  These files give
 detailed information on how to customize your new window manager.
 
 
-Included utilities:
--------------------
+## Included utilities:
 Currently, the only included utilities are a program named bsetroot and a
 script called bsetbg. bsetroot is a replacement for xsetroot, minus a few
 options.  The difference between xsetroot and bsetroot is that bsetroot has
@@ -56,8 +56,7 @@ popular programs used to set background pixmaps, making it possible
 for styles to provide a machine-independent rootCommand.
 
 
-Third-party utilities:
-----------------------
+## Third-party utilities:
 With the start of the 0.60.x series Blackbox no longer handles any
 keyboard shortcuts; instead it supports a communication protocol which
 allows other programs to handle these and related tasks. If you'd like
@@ -69,8 +68,7 @@ styles, check out http://bbconf.sourceforge.net. bbconf is a QT program that
 does just that, as well as providing a GUI for editing your keybindings for the
 above mentioned bbkeys.
 
-Supported Platforms:
---------------------
+## Supported Platforms:
 ix86-Linux 2.0.x (libc5 and glibc2)
 ix86-Linux 2.1.x (libc5 and glibc2)
 ix86-Linux 2.2.x (libc5 and glibc2)
