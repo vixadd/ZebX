@@ -93,9 +93,11 @@ Font.lo: Font.cc /usr/include/stdc-predef.h Font.hh Unicode.hh \
  /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h Color.hh \
- Display.hh Rect.hh /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h Pen.hh \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/X11/Xlib.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h Color.hh Display.hh Rect.hh Pen.hh \
  Resource.hh /usr/include/c++/7.1.1/map \
  /usr/include/c++/7.1.1/bits/stl_tree.h \
  /usr/include/c++/7.1.1/ext/aligned_buffer.h \
@@ -125,10 +127,8 @@ Font.lo: Font.cc /usr/include/stdc-predef.h Font.hh Unicode.hh \
  /usr/include/freetype2/freetype/fterrdef.h \
  /usr/include/fontconfig/fontconfig.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/X11/extensions/Xrender.h \
- /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/X11/extensions/render.h \
- /usr/include/X11/Xdefs.h /usr/include/X11/Xft/XftCompat.h \
- /usr/include/assert.h
+ /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
+ /usr/include/X11/Xft/XftCompat.h /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
@@ -408,12 +408,6 @@ Util.hh:
 
 /usr/include/bits/xopen_lim.h:
 
-Color.hh:
-
-Display.hh:
-
-Rect.hh:
-
 /usr/include/X11/Xlib.h:
 
 /usr/include/X11/X.h:
@@ -421,6 +415,18 @@ Rect.hh:
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
+Color.hh:
+
+Display.hh:
+
+Rect.hh:
 
 Pen.hh:
 
@@ -501,12 +507,6 @@ Resource.hh:
 /usr/include/bits/stat.h:
 
 /usr/include/X11/extensions/Xrender.h:
-
-/usr/include/X11/Xutil.h:
-
-/usr/include/X11/keysym.h:
-
-/usr/include/X11/keysymdef.h:
 
 /usr/include/X11/extensions/render.h:
 

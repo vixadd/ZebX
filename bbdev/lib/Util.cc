@@ -38,10 +38,6 @@
 
 
 
-// need to include these before Util.hh
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
-
 #include "Util.hh"
 
 #include <algorithm>
@@ -208,7 +204,10 @@ std::string bt::tolower(const std::string &string)
   return returnValue;
 }
 
-
+/*
+ * Takes an XTextProperty and returns
+ * it's string value.
+ */
 std::string bt::textPropertyToString(::Display *display,
                                      ::XTextProperty& text_prop) {
   std::string ret;

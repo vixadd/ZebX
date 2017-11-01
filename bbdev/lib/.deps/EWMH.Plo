@@ -94,7 +94,9 @@ EWMH.lo: EWMH.cc /usr/include/stdc-predef.h EWMH.hh Display.hh Rect.hh \
  /usr/include/c++/7.1.1/bits/functional_hash.h \
  /usr/include/c++/7.1.1/bits/basic_string.tcc /usr/include/X11/Xlib.h \
  /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
- /usr/include/X11/Xosdefs.h Unicode.hh /usr/include/c++/7.1.1/vector \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h Unicode.hh \
+ /usr/include/c++/7.1.1/vector \
  /usr/include/c++/7.1.1/bits/stl_construct.h \
  /usr/include/c++/7.1.1/bits/stl_uninitialized.h \
  /usr/include/c++/7.1.1/bits/stl_vector.h \
@@ -388,6 +390,12 @@ Util.hh:
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
 
 Unicode.hh:
 

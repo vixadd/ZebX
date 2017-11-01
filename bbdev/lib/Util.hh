@@ -42,6 +42,8 @@
 
 #include <limits.h>
 #include <string>
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 
 // forward declarations of X11 types
 typedef struct _XDisplay Display;
@@ -109,10 +111,10 @@ namespace bt {
 
   std::string tolower(const std::string &string);
 
-#ifdef _XUTIL_H_
+//#ifdef _XUTIL_H_
   std::string textPropertyToString(::Display *display,
                                    ::XTextProperty& text_prop);
-#endif
+//#endif
 
 } // namespace bt
 

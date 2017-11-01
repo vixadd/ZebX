@@ -96,7 +96,9 @@ Color.lo: Color.cc /usr/include/stdc-predef.h Color.hh \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /usr/include/c++/7.1.1/map /usr/include/c++/7.1.1/bits/stl_tree.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h /usr/include/c++/7.1.1/map \
+ /usr/include/c++/7.1.1/bits/stl_tree.h \
  /usr/include/c++/7.1.1/ext/aligned_buffer.h \
  /usr/include/c++/7.1.1/bits/stl_map.h /usr/include/c++/7.1.1/tuple \
  /usr/include/c++/7.1.1/utility /usr/include/c++/7.1.1/bits/stl_relops.h \
@@ -392,6 +394,12 @@ Util.hh:
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
 
 /usr/include/c++/7.1.1/map:
 
