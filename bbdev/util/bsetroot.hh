@@ -37,6 +37,7 @@
 #include <Util.hh>
 
 #include <string>
+#include <cstring>
 
 class bsetroot: public bt::NoCopy {
 public:
