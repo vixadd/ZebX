@@ -47,6 +47,7 @@
 #include <EventHandler.hh>
 
 #include <stdio.h>
+#include <cstring>
 
 #include <list>
 #include <vector>

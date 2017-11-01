@@ -41,6 +41,7 @@
 
 #include <Timer.hh>
 #include <Util.hh>
+#include <strings.h>
 
 class Blackbox;
 

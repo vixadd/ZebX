@@ -33,6 +33,7 @@
 
 #include <Application.hh>
 #include <Util.hh>
+#include <cstring>
 
 #include "BlackboxResource.hh"
 
