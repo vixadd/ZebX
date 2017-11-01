@@ -96,9 +96,11 @@ Menu.lo: Menu.cc /usr/include/stdc-predef.h Menu.hh Color.hh \
  /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h Rect.hh \
- Texture.hh Timer.hh /usr/include/c++/7.1.1/algorithm \
- /usr/include/c++/7.1.1/utility /usr/include/c++/7.1.1/bits/stl_relops.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h Rect.hh Texture.hh Timer.hh \
+ /usr/include/c++/7.1.1/algorithm /usr/include/c++/7.1.1/utility \
+ /usr/include/c++/7.1.1/bits/stl_relops.h \
  /usr/include/c++/7.1.1/bits/stl_algo.h \
  /usr/include/c++/7.1.1/bits/algorithmfwd.h \
  /usr/include/c++/7.1.1/bits/stl_heap.h \
@@ -124,8 +126,7 @@ Menu.lo: Menu.cc /usr/include/stdc-predef.h Menu.hh Color.hh \
  /usr/include/c++/7.1.1/array /usr/include/c++/7.1.1/stdexcept \
  /usr/include/c++/7.1.1/bits/invoke.h \
  /usr/include/c++/7.1.1/bits/stl_multimap.h Bitmap.hh Display.hh Pen.hh \
- PixmapCache.hh Resource.hh /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/assert.h
+ PixmapCache.hh Resource.hh /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
@@ -419,6 +420,12 @@ Util.hh:
 
 /usr/include/bits/xopen_lim.h:
 
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
 Rect.hh:
 
 Texture.hh:
@@ -504,9 +511,5 @@ Pen.hh:
 PixmapCache.hh:
 
 Resource.hh:
-
-/usr/include/X11/keysym.h:
-
-/usr/include/X11/keysymdef.h:
 
 /usr/include/assert.h:

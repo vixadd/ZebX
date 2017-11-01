@@ -41,6 +41,7 @@
 
 #include <list>
 #include <string>
+#include <algorithm>
 
 namespace bt {
 

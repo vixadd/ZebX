@@ -93,7 +93,10 @@ Application.lo: Application.cc /usr/include/stdc-predef.h Application.hh \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/c++/7.1.1/bits/functional_hash.h \
- /usr/include/c++/7.1.1/bits/basic_string.tcc \
+ /usr/include/c++/7.1.1/bits/basic_string.tcc /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
  /usr/include/c++/7.1.1/algorithm /usr/include/c++/7.1.1/utility \
  /usr/include/c++/7.1.1/bits/stl_relops.h \
  /usr/include/c++/7.1.1/bits/stl_algo.h \
@@ -118,14 +121,11 @@ Application.lo: Application.cc /usr/include/stdc-predef.h Application.hh \
  /usr/include/c++/7.1.1/array /usr/include/c++/7.1.1/stdexcept \
  /usr/include/c++/7.1.1/bits/invoke.h \
  /usr/include/c++/7.1.1/bits/stl_multimap.h Display.hh Rect.hh \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h EventHandler.hh \
- Menu.hh Color.hh Font.hh Unicode.hh Texture.hh \
+ EventHandler.hh Menu.hh Color.hh Font.hh Unicode.hh Texture.hh \
  /usr/include/c++/7.1.1/list /usr/include/c++/7.1.1/bits/stl_list.h \
  /usr/include/c++/7.1.1/bits/allocated_ptr.h \
  /usr/include/c++/7.1.1/bits/list.tcc /usr/include/X11/Xatom.h \
- /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/X11/extensions/shape.h \
+ /usr/include/X11/extensions/shape.h \
  /usr/include/X11/extensions/shapeconst.h /usr/include/sys/time.h \
  /usr/include/sys/wait.h /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
@@ -417,6 +417,20 @@ Util.hh:
 
 /usr/include/c++/7.1.1/bits/basic_string.tcc:
 
+/usr/include/X11/Xlib.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
 /usr/include/c++/7.1.1/algorithm:
 
 /usr/include/c++/7.1.1/utility:
@@ -481,14 +495,6 @@ Display.hh:
 
 Rect.hh:
 
-/usr/include/X11/Xlib.h:
-
-/usr/include/X11/X.h:
-
-/usr/include/X11/Xfuncproto.h:
-
-/usr/include/X11/Xosdefs.h:
-
 EventHandler.hh:
 
 Menu.hh:
@@ -510,12 +516,6 @@ Texture.hh:
 /usr/include/c++/7.1.1/bits/list.tcc:
 
 /usr/include/X11/Xatom.h:
-
-/usr/include/X11/Xutil.h:
-
-/usr/include/X11/keysym.h:
-
-/usr/include/X11/keysymdef.h:
 
 /usr/include/X11/extensions/shape.h:
 
