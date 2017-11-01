@@ -92,10 +92,11 @@ Bitmap.lo: Bitmap.cc /usr/include/stdc-predef.h Bitmap.hh Util.hh \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/c++/7.1.1/bits/functional_hash.h \
- /usr/include/c++/7.1.1/bits/basic_string.tcc Display.hh Rect.hh \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h Pen.hh \
- /usr/include/assert.h
+ /usr/include/c++/7.1.1/bits/basic_string.tcc /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h Display.hh \
+ Rect.hh Pen.hh /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
@@ -373,10 +374,6 @@ Util.hh:
 
 /usr/include/c++/7.1.1/bits/basic_string.tcc:
 
-Display.hh:
-
-Rect.hh:
-
 /usr/include/X11/Xlib.h:
 
 /usr/include/X11/X.h:
@@ -384,6 +381,16 @@ Rect.hh:
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
+Display.hh:
+
+Rect.hh:
 
 Pen.hh:
 

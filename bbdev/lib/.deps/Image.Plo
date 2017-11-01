@@ -92,10 +92,11 @@ Image.lo: Image.cc /usr/include/stdc-predef.h Image.hh Util.hh \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/c++/7.1.1/bits/functional_hash.h \
- /usr/include/c++/7.1.1/bits/basic_string.tcc Display.hh Rect.hh \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h Pen.hh \
- Texture.hh Color.hh /usr/include/c++/7.1.1/algorithm \
+ /usr/include/c++/7.1.1/bits/basic_string.tcc /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h Display.hh \
+ Rect.hh Pen.hh Texture.hh Color.hh /usr/include/c++/7.1.1/algorithm \
  /usr/include/c++/7.1.1/utility /usr/include/c++/7.1.1/bits/stl_relops.h \
  /usr/include/c++/7.1.1/bits/stl_algo.h \
  /usr/include/c++/7.1.1/bits/algorithmfwd.h \
@@ -107,24 +108,22 @@ Image.lo: Image.cc /usr/include/stdc-predef.h Image.hh Util.hh \
  /usr/include/c++/7.1.1/bits/stl_uninitialized.h \
  /usr/include/c++/7.1.1/bits/stl_vector.h \
  /usr/include/c++/7.1.1/bits/stl_bvector.h \
- /usr/include/c++/7.1.1/bits/vector.tcc /usr/include/X11/Xutil.h \
- /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
- /usr/include/sys/ipc.h /usr/include/bits/ipctypes.h \
- /usr/include/bits/ipc.h /usr/include/sys/shm.h /usr/include/bits/shm.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/getopt.h /usr/include/X11/extensions/XShm.h \
- /usr/include/X11/extensions/shm.h /usr/include/assert.h \
- /usr/include/c++/7.1.1/math.h /usr/include/c++/7.1.1/cmath \
- /usr/include/math.h /usr/include/bits/math-vector.h \
- /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/huge_val.h \
- /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
- /usr/include/bits/inf.h /usr/include/bits/nan.h \
- /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
- /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/iscanonical.h /usr/include/bits/mathinline.h \
- /usr/include/c++/7.1.1/stdlib.h /usr/include/c++/7.1.1/cstring \
- /usr/include/string.h
+ /usr/include/c++/7.1.1/bits/vector.tcc /usr/include/sys/ipc.h \
+ /usr/include/bits/ipctypes.h /usr/include/bits/ipc.h \
+ /usr/include/sys/shm.h /usr/include/bits/shm.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/X11/extensions/XShm.h /usr/include/X11/extensions/shm.h \
+ /usr/include/assert.h /usr/include/c++/7.1.1/math.h \
+ /usr/include/c++/7.1.1/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/flt-eval-method.h \
+ /usr/include/bits/fp-logb.h /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/iscanonical.h \
+ /usr/include/bits/mathinline.h /usr/include/c++/7.1.1/stdlib.h \
+ /usr/include/c++/7.1.1/cstring /usr/include/string.h
 
 /usr/include/stdc-predef.h:
 
@@ -402,10 +401,6 @@ Util.hh:
 
 /usr/include/c++/7.1.1/bits/basic_string.tcc:
 
-Display.hh:
-
-Rect.hh:
-
 /usr/include/X11/Xlib.h:
 
 /usr/include/X11/X.h:
@@ -413,6 +408,16 @@ Rect.hh:
 /usr/include/X11/Xfuncproto.h:
 
 /usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
+Display.hh:
+
+Rect.hh:
 
 Pen.hh:
 
@@ -449,12 +454,6 @@ Color.hh:
 /usr/include/c++/7.1.1/bits/stl_bvector.h:
 
 /usr/include/c++/7.1.1/bits/vector.tcc:
-
-/usr/include/X11/Xutil.h:
-
-/usr/include/X11/keysym.h:
-
-/usr/include/X11/keysymdef.h:
 
 /usr/include/sys/ipc.h:
 
