@@ -1,2 +1,5 @@
 language:cpp
-script: cd bbdev && ./configure && make && make install
+script: - cd bbdev
+        - ./configure
+        - make
+        - make install
