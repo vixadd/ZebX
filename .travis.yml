@@ -28,7 +28,8 @@ matrix:
 
 before_install:
   - sudo apt-get update -qq
-script: - cd bbdev
-        - ./configure
-        - make
-        - make install
+script: 
+  - cd bbdev
+  - ./configure
+  - make
+  - make install
