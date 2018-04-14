@@ -1,7 +1,9 @@
 # Styles template file for ZebX to
 # operate off of.
 #
-# Author: David Kroell
+#  Author : David Kroell
+# Version : 1.0.0
+#
 
 *button.pressed.appearance: sunken solid
 *button.pressed.backgroundColor: darkgrey
