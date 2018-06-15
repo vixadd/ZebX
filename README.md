@@ -1,7 +1,7 @@
 # ZebX
 ZebX Desktop Environment for light weight designs.
 
-## BUILD-[![Build Status](https://travis-ci.org/vixadd/ZebX.svg?branch=master)](https://travis-ci.org/vixadd/ZebX)
+## BUILD - [![Build Status](https://travis-ci.org/vixadd/ZebX.svg?branch=master)](https://travis-ci.org/vixadd/ZebX)
 
 # Window Manager And Desktop Manager
 The system application acts as an interface using an open source window manager. Interfacing with this gives us the capability to interface with everything. Black box is an open source window manager that is written in C++. ZebX acts as an interface to configure the BlackBox Window Manager. It interfaces with multiple c scripts provided under the blackbox base.
