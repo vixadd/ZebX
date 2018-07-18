@@ -200,6 +200,7 @@ RANLIB="ranlib"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs\$old_deplibs~\$RANLIB \$oldlib"
 old_postinstall_cmds="\$RANLIB \$oldlib~chmod 644 \$oldlib"
 old_postuninstall_cmds=""
+#zebx_install_cmnds=""
 
 # Create an old-style archive from a shared archive.
 old_archive_from_new_cmds=""
