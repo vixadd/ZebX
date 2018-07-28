@@ -41,7 +41,7 @@ menu.active.textColor: white
 rootCommand: bsetbg -full /home/kroelld/Pictures/arch_bg.jpg
 
 slit.appearance: raised solid
-slit.backgroundColor: black
+slit.backgroundColor: white
 slit.marginWidth: 3
 
 toolbar.appearance: raised solid
