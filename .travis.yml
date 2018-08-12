@@ -28,7 +28,8 @@ matrix:
 
 before_install:
   - sudo apt-get update -qq
+  - sudo apt-get install xorg-dev
 script: 
-  - cd bbdev
   - ./configure
   - make
+  - sudo make install
