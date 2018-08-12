@@ -28,14 +28,18 @@ The source tree for Blackbox is comprised of five subdirectories:
 
 
 ## Development and Deployment:
+Install the following dependencies:
+```bash
+$ sudo apt-get install xorg xorg-dev
+```
 The quickest and easiest way to get Blackbox up and running is to run the
 following commands:
 
 ```bash
-cd blackbox-version
-./configure
-make
-su -c 'make install'
+$ cd blackbox-version
+$ ./configure
+$ make
+$ sudo make install
 ```
 However, many users have said that on certain platforms they have experienced issues with this method.
 For a more indepth installation, the following is valid.
