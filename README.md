@@ -2,7 +2,7 @@
 ZebX is a new mechanism designed for ARM Processing computers to allow for a minimalized form of displaying information on a well organized UI.
 My hope is that I can build off of Blackbox to allow for a 100% user-controlled and user-oriented GUI experience.
 
-Status of the current build - 
+Status of the current build - [![Build Status](https://travis-ci.org/vixadd/ZebX.svg?branch=master)](https://travis-ci.org/vixadd/ZebX)
 
 ## Built with Blackbox
 An X11 Window Manager
