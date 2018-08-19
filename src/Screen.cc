@@ -1403,7 +1403,7 @@ void BScreen::InitMenu(void) {
   }
 
   if (defaultMenu) {
-    _rootmenu->setTitle(bt::toUnicode("_Blackbox"));
+    _rootmenu->setTitle(bt::toUnicode("ZebX"));
 
     _rootmenu->insertFunction(bt::toUnicode("xterm"),
                               BScreen::Execute, "xterm");
@@ -1412,7 +1412,9 @@ void BScreen::InitMenu(void) {
     _rootmenu->insertFunction(bt::toUnicode("Exit"),
                               BScreen::Exit);
   } else {
+
     _blackbox->saveMenuFilename(_blackbox->resource().menuFilename());
+
   }
 }
 
