@@ -1,38 +1,15 @@
-//------------------------------BLACKBOX DISCLAIMER-----------------------------
-// -*- mode: C++; indent-tabs-mode: nil; c-basic-offset: 2; -*-
-// Application.hh for Blackbox - an X11 Window manager
-// Copyright (c) 2001 - 2005 Sean 'Shaleh' Perry <shaleh at debian.org>
-// Copyright (c) 1997 - 2000, 2002 - 2005
-//         Bradley T Hughes <bhughes at trolltech.com>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the "Software"),
-// to deal in the Software without restriction, including without limitation
-// the rights to use, copy, modify, merge, publish, distribute, sublicense,
-// and/or sell copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
-// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-// DEALINGS IN THE SOFTWARE.
-//------------------------------BLACKBOX DISCLAIMER-----------------------------
-
-
-
-
-
-
-
-
-
-
+/*
+ * ZebX - Display Management System.
+ * Utilizes the tools under the BlackBox system.
+ *
+ * Color.cc for ZebX - Display Management System
+ * Copyright (c) 2018 David Kroell <kroelld.96@gmail.com>
+ *
+ * Application.hh for Blackbox - an X11 Window manager
+ * Copyright (c) 2001 - 2005 Sean 'Shaleh' Perry <shaleh at debian.org>
+ * Copyright (c) 1997 - 2000, 2002 - 2005
+ *         Bradley T Hughes <bhughes at trolltech.com>
+ */
 
 
 #ifndef __Application_hh
@@ -50,33 +27,49 @@ namespace bt {
   class EventHandler;
   class Menu;
 
-  /*
-    The application object.  It provides event delivery, timer
-    activation and signal handling functionality to fit most
-    application needs.
-  */
+  /**
+   * The application object.  It provides event delivery, timer
+   * activation and signal handling functionality to fit most
+   * application needs.
+   *
+   * Params:
+   *		app_name: designated name for the application.
+   *		dpy_name: display name of the application.
+   *		multi_head: Indicator for more than one display for the application.
+   */
   class Application : public TimerQueueManager, public NoCopy {
   protected:
+
+	// Application state enumeration to map application behavior.
     enum RunState { STARTUP, RUNNING, SHUTDOWN, SIGNALLED };
 
   private:
-    struct {
+
+
+    struct
+	{
       bool extensions;
       int event_basep, error_basep;
-    } shape;
+    }
+    shape;
 
     Display *_display;
     std::string _app_name;
 
-    RunState run_state;
-    Time xserver_time;
+    RunState run_state; // Current run state.
+    Time xserver_time;  // Timestamp of the xserver.
 
-    typedef std::map<Window,EventHandler*> EventHandlerMap;
+    // Mapper of window to a specific EventHandler.
+    typedef std::map<Window, EventHandler*> EventHandlerMap;
+
+    // Event handler map of this application.
     EventHandlerMap eventhandlers;
 
-    timeval currentTime;
+
+    timeval currentTime; //xserver timestamp
     TimerQueue timerList;
     void adjustTimers(const timeval &offset);
+
 
     typedef std::deque<Menu*> MenuStack;
     MenuStack menus;
