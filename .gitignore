@@ -1,0 +1,14 @@
+## Git Ignore file for C++ file generated in ZebX
+## Mainly consists of Compilation and library files
+## made as a result of the make operations.
+
+*.o
+*.lo
+*.a
+
+## The blackbox executable shows up in source for
+## developers who run operations on on the CORTEX-M3
+## This is just for easy access and is done as a result
+## of compilation. We don't need it on the version system.
+
+src/blackbox
