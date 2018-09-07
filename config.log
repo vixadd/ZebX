@@ -687,7 +687,7 @@ configure:20324: $? = 0
 configure:20331: result: yes
 configure:20343: checking for t_open in -lnsl
 configure:20373: g++ -o conftest -g -O2  -I/usr/local/include  -L/usr/local/lib conftest.cc -lnsl   >&5
-/tmp/ccYl49kT.o: In function `main':
+/tmp/cctjswKi.o: In function `main':
 /home/krobar/Documents/kroelld.git/VIXADD/ZebX/conftest.cc:39: undefined reference to `t_open'
 collect2: error: ld returned 1 exit status
 configure:20379: $? = 1
@@ -956,6 +956,7 @@ config.status:744: creating lib/libbt.pc
 config.status:744: creating src/Makefile
 config.status:744: creating util/Makefile
 config.status:848: creating config.h
+config.status:978: config.h is unchanged
 config.status:1158: executing depfiles commands
 configure:23097: result: 
 configure:23099: result: 	zebx version 0.0.1 configured successfully.
