@@ -42,6 +42,7 @@ configure:1581: checking for a BSD-compatible install
 configure:1636: result: /usr/bin/install -c
 configure:1647: checking whether build environment is sane
 configure:1690: result: yes
+configure:1714: WARNING: `missing' script is too old or missing
 configure:1755: checking for gawk
 configure:1771: found /usr/bin/gawk
 configure:1781: result: gawk
@@ -599,33 +600,6 @@ configure:9237: checking whether to build shared libraries
 configure:9258: result: no
 configure:9261: checking whether to build static libraries
 configure:9265: result: yes
-configure:9357: creating libtool
-configure:9935: checking for ld used by g++
-configure:10002: result: /usr/bin/ld
-configure:10011: checking if the linker (/usr/bin/ld) is GNU ld
-configure:10026: result: yes
-configure:10077: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
-configure:10964: result: yes
-configure:10982: g++ -c -g -O2  -I/usr/local/include conftest.cc >&5
-configure:10985: $? = 0
-configure:11081: checking for g++ option to produce PIC
-configure:11349: result: -fPIC
-configure:11357: checking if g++ PIC flag -fPIC works
-configure:11375: g++ -c -g -O2  -I/usr/local/include -fPIC -DPIC conftest.cc >&5
-configure:11379: $? = 0
-configure:11392: result: yes
-configure:11416: checking if g++ supports -c -o file.o
-configure:11437: g++ -c -g -O2  -I/usr/local/include -o out/conftest2.o conftest.cc >&5
-configure:11441: $? = 0
-configure:11463: result: yes
-configure:11489: checking whether the g++ linker (/usr/bin/ld) supports shared libraries
-configure:11514: result: yes
-configure:11585: checking dynamic linker characteristics
-configure:12131: result: GNU/Linux ld.so
-configure:12135: checking how to hardcode library paths into programs
-configure:12160: result: immediate
-configure:12174: checking whether stripping libraries is possible
-configure:12179: result: yes
 configure:19691: checking for sed
 configure:19707: found /bin/sed
 configure:19717: result: sed
@@ -687,7 +661,7 @@ configure:20324: $? = 0
 configure:20331: result: yes
 configure:20343: checking for t_open in -lnsl
 configure:20373: g++ -o conftest -g -O2  -I/usr/local/include  -L/usr/local/lib conftest.cc -lnsl   >&5
-/tmp/cc4b0FL7.o: In function `main':
+/tmp/ccGYnBrx.o: In function `main':
 /home/krobar/Documents/kroelld.git/VIXADD/ZebX/conftest.cc:39: undefined reference to `t_open'
 collect2: error: ld returned 1 exit status
 configure:20379: $? = 1
@@ -1065,23 +1039,15 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_objdir=.libs
 lt_cv_path_LD=/usr/bin/ld
-lt_cv_path_LDCXX=/usr/bin/ld
 lt_cv_path_NM='/usr/bin/nm -B'
 lt_cv_path_SED=/bin/sed
 lt_cv_prog_compiler_c_o=yes
-lt_cv_prog_compiler_c_o_CXX=yes
 lt_cv_prog_compiler_rtti_exceptions=no
 lt_cv_prog_gnu_ld=yes
-lt_cv_prog_gnu_ldcxx=yes
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[ 	]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ 	][ 	]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'''
 lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \([^ ]*\) $/  {\"\1\", (lt_ptr) 0},/p'\'' -e '\''s/^[BCDEGRST] \([^ ]*\) \([^ ]*\)$/  {"\2", (lt_ptr) \&\2},/p'\'''
 lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^. .* \(.*\)$/extern int \1;/p'\'''
 lt_cv_sys_max_cmd_len=32768
-lt_lt_cv_prog_compiler_c_o='"yes"'
-lt_lt_cv_prog_compiler_c_o_CXX='"yes"'
-lt_lt_cv_sys_global_symbol_pipe='"sed -n -e '\''s/^.*[ 	]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[ 	][ 	]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p'\''"'
-lt_lt_cv_sys_global_symbol_to_c_name_address='"sed -n -e '\''s/^: \\([^ ]*\\) \$/  {\\\"\\1\\\", (lt_ptr) 0},/p'\'' -e '\''s/^[BCDEGRST] \\([^ ]*\\) \\([^ ]*\\)\$/  {\"\\2\", (lt_ptr) \\&\\2},/p'\''"'
-lt_lt_cv_sys_global_symbol_to_cdecl='"sed -n -e '\''s/^. .* \\(.*\\)\$/extern int \\1;/p'\''"'
 pkg_cv_xft_CFLAGS=-I/usr/include/freetype2
 pkg_cv_xft_LIBS=-lXft
 
@@ -1089,15 +1055,15 @@ pkg_cv_xft_LIBS=-lXft
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run aclocal-1.9'
+ACLOCAL='aclocal-1.9'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run tar'
+AMTAR='tar'
 AR='ar'
-AUTOCONF='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run automake-1.9'
+AUTOCONF='autoconf'
+AUTOHEADER='autoheader'
+AUTOMAKE='automake-1.9'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -1136,7 +1102,7 @@ LTLIBOBJS=''
 MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
-MAKEINFO='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run makeinfo'
+MAKEINFO='makeinfo'
 MITSHM='-DMITSHM'
 NLS='-DNLS'
 OBJEXT='o'

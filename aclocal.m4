@@ -21,16 +21,24 @@
 # ----------------------------
 # Automake X.Y traces this macro to ensure aclocal.m4 has been
 # generated from the m4 files accompanying Automake X.Y.
+
 AC_DEFUN([AM_AUTOMAKE_VERSION], [am__api_version="1.9"])
 
 # AM_SET_CURRENT_AUTOMAKE_VERSION
 # -------------------------------
 # Call AM_AUTOMAKE_VERSION so it can be traced.
 # This function is AC_REQUIREd by AC_INIT_AUTOMAKE.
+
+
+
+
 AC_DEFUN([AM_SET_CURRENT_AUTOMAKE_VERSION],
 	 [AM_AUTOMAKE_VERSION([1.9.6])])
 
-# AM_AUX_DIR_EXPAND                                         -*- Autoconf -*-
+
+
+
+# AM_AUX_DIR_EXPAND                                -*- Autoconf -*-
 
 # Copyright (C) 2001, 2003, 2005  Free Software Foundation, Inc.
 #
@@ -76,6 +84,10 @@ AC_DEFUN([AM_SET_CURRENT_AUTOMAKE_VERSION],
 # absolute PATH.  The drawback is that using absolute paths prevent a
 # configured tree to be moved without reconfiguration.
 
+
+
+
+
 AC_DEFUN([AM_AUX_DIR_EXPAND],
 [dnl Rely on autoconf to set up CDPATH properly.
 AC_PREREQ([2.50])dnl
@@ -83,7 +95,11 @@ AC_PREREQ([2.50])dnl
 am_aux_dir=`cd $ac_aux_dir && pwd`
 ])
 
-# AM_CONDITIONAL                                            -*- Autoconf -*-
+
+
+
+
+# AM_CONDITIONAL                              -*- Autoconf -*-
 
 # Copyright (C) 1997, 2000, 2001, 2003, 2004, 2005
 # Free Software Foundation, Inc.
@@ -97,6 +113,10 @@ am_aux_dir=`cd $ac_aux_dir && pwd`
 # AM_CONDITIONAL(NAME, SHELL-CONDITION)
 # -------------------------------------
 # Define a conditional.
+
+
+
+
 AC_DEFUN([AM_CONDITIONAL],
 [AC_PREREQ(2.52)dnl
  ifelse([$1], [TRUE],  [AC_FATAL([$0: invalid condition: $1])],
@@ -115,6 +135,10 @@ AC_CONFIG_COMMANDS_PRE(
   AC_MSG_ERROR([[conditional "$1" was never defined.
 Usually this means the macro was only invoked conditionally.]])
 fi])])
+
+
+
+
 
 
 # Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005
@@ -143,6 +167,8 @@ fi])])
 # modified to invoke _AM_DEPENDENCIES(CC); we would have a circular
 # dependency, and given that the user is not expected to run this macro,
 # just rely on AC_PROG_CC.
+
+
 AC_DEFUN([_AM_DEPENDENCIES],
 [AC_REQUIRE([AM_SET_DEPDIR])dnl
 AC_REQUIRE([AM_OUTPUT_DEPENDENCY_COMMANDS])dnl

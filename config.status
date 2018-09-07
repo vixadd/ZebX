@@ -500,11 +500,11 @@ s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,zebx,;t t
 s,@VERSION@,0.0.1,;t t
-s,@ACLOCAL@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run aclocal-1.9,;t t
-s,@AUTOCONF@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run automake-1.9,;t t
-s,@AUTOHEADER@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run makeinfo,;t t
+s,@ACLOCAL@,aclocal-1.9,;t t
+s,@AUTOCONF@,autoconf,;t t
+s,@AUTOMAKE@,automake-1.9,;t t
+s,@AUTOHEADER@,autoheader,;t t
+s,@MAKEINFO@,makeinfo,;t t
 s,@install_sh@,/home/krobar/Documents/kroelld.git/VIXADD/ZebX/install-sh,;t t
 s,@STRIP@,strip,;t t
 s,@ac_ct_STRIP@,strip,;t t
@@ -513,7 +513,7 @@ s,@mkdir_p@,mkdir -p --,;t t
 s,@AWK@,gawk,;t t
 s,@SET_MAKE@,,;t t
 s,@am__leading_dot@,.,;t t
-s,@AMTAR@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run tar,;t t
+s,@AMTAR@,tar,;t t
 s,@am__tar@,${AMTAR} chof - "$$tardir",;t t
 s,@am__untar@,${AMTAR} xf -,;t t
 s,@CC@,gcc,;t t
