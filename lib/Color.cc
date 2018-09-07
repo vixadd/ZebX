@@ -1,15 +1,4 @@
-/*
- * ZebX - Display Management System.
- * Utilizes the tools under the BlackBox system.
- *
- * Color.cc for ZebX - Display Management System
- * Copyright (c) 2018 David Kroell <kroelld.96@gmail.com>
- *
- * Color.cc for Blackbox - an X11 Window manager
- * Copyright (c) 2001 - 2005 Sean 'Shaleh' Perry <shaleh at debian.org>
- * Copyright (c) 1997 - 2000, 2002 - 2005
- *         Bradley T Hughes <bhughes at trolltech.com>
- */
+// TODO - Documentation
 
 #include "Color.hh"
 #include "Display.hh"
