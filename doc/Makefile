@@ -18,9 +18,9 @@
 srcdir = .
 top_srcdir = ..
 
-pkgdatadir = $(datadir)/blackbox
-pkglibdir = $(libdir)/blackbox
-pkgincludedir = $(includedir)/blackbox
+pkgdatadir = $(datadir)/zebx
+pkglibdir = $(libdir)/zebx
+pkgincludedir = $(includedir)/zebx
 top_builddir = ..
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = /usr/bin/install -c
@@ -103,12 +103,12 @@ MAKEINFO = ${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run
 MITSHM = -DMITSHM
 NLS = -DNLS
 OBJEXT = o
-PACKAGE = blackbox
+PACKAGE = zebx
 PACKAGE_BUGREPORT = http://blackboxwm.sourceforge.net
-PACKAGE_NAME = blackbox
-PACKAGE_STRING = blackbox 0.70.1
-PACKAGE_TARNAME = blackbox
-PACKAGE_VERSION = 0.70.1
+PACKAGE_NAME = ZebX
+PACKAGE_STRING = zebx 0.0.1
+PACKAGE_TARNAME = zebx
+PACKAGE_VERSION = 0.0.1
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 RANLIB = ranlib
@@ -116,7 +116,7 @@ SET_MAKE =
 SHAPE = -DSHAPE
 SHELL = /bin/bash
 STRIP = strip
-VERSION = 0.70.1
+VERSION = 0.0.1
 XFT = -DXFT
 XFT_PKGCONFIG = xft >= 2.0.0
 ac_ct_AR = ar

@@ -143,13 +143,13 @@ configure:3180: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:3219: result: gcc -E
@@ -164,13 +164,13 @@ configure:3287: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:3331: checking for egrep
@@ -257,13 +257,13 @@ configure:3837: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | #define STDC_HEADERS 1
 | /* end confdefs.h.  */
 | 
@@ -418,13 +418,13 @@ configure:5122: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | #define STDC_HEADERS 1
 | #ifdef __cplusplus
 | extern "C" void std::exit (int) throw (); using std::exit;
@@ -453,13 +453,13 @@ configure:5229: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | #define STDC_HEADERS 1
 | #ifdef __cplusplus
 | extern "C" void std::exit (int) throw (); using std::exit;
@@ -687,20 +687,20 @@ configure:20324: $? = 0
 configure:20331: result: yes
 configure:20343: checking for t_open in -lnsl
 configure:20373: g++ -o conftest -g -O2  -I/usr/local/include  -L/usr/local/lib conftest.cc -lnsl   >&5
-/tmp/ccuiSjeV.o: In function `main':
+/tmp/ccYl49kT.o: In function `main':
 /home/krobar/Documents/kroelld.git/VIXADD/ZebX/conftest.cc:39: undefined reference to `t_open'
 collect2: error: ld returned 1 exit status
 configure:20379: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | #define STDC_HEADERS 1
 | #ifdef __cplusplus
 | extern "C" void std::exit (int) throw (); using std::exit;
@@ -743,13 +743,13 @@ configure:20447: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
 | 
-| #define PACKAGE_NAME "blackbox"
-| #define PACKAGE_TARNAME "blackbox"
-| #define PACKAGE_VERSION "0.70.1"
-| #define PACKAGE_STRING "blackbox 0.70.1"
+| #define PACKAGE_NAME "ZebX"
+| #define PACKAGE_TARNAME "zebx"
+| #define PACKAGE_VERSION "0.0.1"
+| #define PACKAGE_STRING "zebx 0.0.1"
 | #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-| #define PACKAGE "blackbox"
-| #define VERSION "0.70.1"
+| #define PACKAGE "zebx"
+| #define VERSION "0.0.1"
 | #define STDC_HEADERS 1
 | #ifdef __cplusplus
 | extern "C" void std::exit (int) throw (); using std::exit;
@@ -956,10 +956,9 @@ config.status:744: creating lib/libbt.pc
 config.status:744: creating src/Makefile
 config.status:744: creating util/Makefile
 config.status:848: creating config.h
-config.status:978: config.h is unchanged
 config.status:1158: executing depfiles commands
 configure:23097: result: 
-configure:23099: result: 	blackbox version 0.70.1 configured successfully.
+configure:23099: result: 	zebx version 0.0.1 configured successfully.
 configure:23101: result: 
 configure:23103: result: Using '/usr/local' for installation.
 configure:23105: result: Using 'g++' for C++ compiler.
@@ -1140,12 +1139,12 @@ MAKEINFO='${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run 
 MITSHM='-DMITSHM'
 NLS='-DNLS'
 OBJEXT='o'
-PACKAGE='blackbox'
+PACKAGE='zebx'
 PACKAGE_BUGREPORT='http://blackboxwm.sourceforge.net'
-PACKAGE_NAME='blackbox'
-PACKAGE_STRING='blackbox 0.70.1'
-PACKAGE_TARNAME='blackbox'
-PACKAGE_VERSION='0.70.1'
+PACKAGE_NAME='ZebX'
+PACKAGE_STRING='zebx 0.0.1'
+PACKAGE_TARNAME='zebx'
+PACKAGE_VERSION='0.0.1'
 PATH_SEPARATOR=':'
 PKG_CONFIG='/usr/bin/pkg-config'
 RANLIB='ranlib'
@@ -1153,7 +1152,7 @@ SET_MAKE=''
 SHAPE='-DSHAPE'
 SHELL='/bin/bash'
 STRIP='strip'
-VERSION='0.70.1'
+VERSION='0.0.1'
 XFT='-DXFT'
 XFT_PKGCONFIG='xft >= 2.0.0'
 ac_ct_AR='ar'
@@ -1230,14 +1229,14 @@ xft_LIBS='-lXft'
 #define HAVE_X11_XLOCALE_H 1
 #define HAVE_X11_XRESOURCE_H 1
 #define HAVE_X11_XUTIL_H 1
-#define PACKAGE "blackbox"
+#define PACKAGE "zebx"
 #define PACKAGE_BUGREPORT "http://blackboxwm.sourceforge.net"
-#define PACKAGE_NAME "blackbox"
-#define PACKAGE_STRING "blackbox 0.70.1"
-#define PACKAGE_TARNAME "blackbox"
-#define PACKAGE_VERSION "0.70.1"
+#define PACKAGE_NAME "ZebX"
+#define PACKAGE_STRING "zebx 0.0.1"
+#define PACKAGE_TARNAME "zebx"
+#define PACKAGE_VERSION "0.0.1"
 #define STDC_HEADERS 1
-#define VERSION "0.70.1"
+#define VERSION "0.0.1"
 #endif
 #ifdef __cplusplus
 extern "C" void std::exit (int) throw (); using std::exit;

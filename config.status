@@ -466,10 +466,10 @@ if test -n "$CONFIG_FILES"; then
    s/@@/,@/; s/@@/@,/; s/@;t t$/,;t t/' >$tmp/subs.sed <<\CEOF
 s,@SHELL@,/bin/bash,;t t
 s,@PATH_SEPARATOR@,:,;t t
-s,@PACKAGE_NAME@,blackbox,;t t
-s,@PACKAGE_TARNAME@,blackbox,;t t
-s,@PACKAGE_VERSION@,0.70.1,;t t
-s,@PACKAGE_STRING@,blackbox 0.70.1,;t t
+s,@PACKAGE_NAME@,ZebX,;t t
+s,@PACKAGE_TARNAME@,zebx,;t t
+s,@PACKAGE_VERSION@,0.0.1,;t t
+s,@PACKAGE_STRING@,zebx 0.0.1,;t t
 s,@PACKAGE_BUGREPORT@,http://blackboxwm.sourceforge.net,;t t
 s,@exec_prefix@,${prefix},;t t
 s,@prefix@,/usr/local,;t t
@@ -498,8 +498,8 @@ s,@INSTALL_PROGRAM@,${INSTALL},;t t
 s,@INSTALL_SCRIPT@,${INSTALL},;t t
 s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
-s,@PACKAGE@,blackbox,;t t
-s,@VERSION@,0.70.1,;t t
+s,@PACKAGE@,zebx,;t t
+s,@VERSION@,0.0.1,;t t
 s,@ACLOCAL@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run aclocal-1.9,;t t
 s,@AUTOCONF@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run autoconf,;t t
 s,@AUTOMAKE@,${SHELL} /home/krobar/Documents/kroelld.git/VIXADD/ZebX/missing --run automake-1.9,;t t
@@ -887,13 +887,13 @@ echo "$as_me: error: cannot find input file: $f" >&2;}
 /^[	 ]*#[	 ]*define/!b
 t clr
 : clr
-${ac_dA}PACKAGE_NAME${ac_dB}PACKAGE_NAME${ac_dC}"blackbox"${ac_dD}
-${ac_dA}PACKAGE_TARNAME${ac_dB}PACKAGE_TARNAME${ac_dC}"blackbox"${ac_dD}
-${ac_dA}PACKAGE_VERSION${ac_dB}PACKAGE_VERSION${ac_dC}"0.70.1"${ac_dD}
-${ac_dA}PACKAGE_STRING${ac_dB}PACKAGE_STRING${ac_dC}"blackbox 0.70.1"${ac_dD}
+${ac_dA}PACKAGE_NAME${ac_dB}PACKAGE_NAME${ac_dC}"ZebX"${ac_dD}
+${ac_dA}PACKAGE_TARNAME${ac_dB}PACKAGE_TARNAME${ac_dC}"zebx"${ac_dD}
+${ac_dA}PACKAGE_VERSION${ac_dB}PACKAGE_VERSION${ac_dC}"0.0.1"${ac_dD}
+${ac_dA}PACKAGE_STRING${ac_dB}PACKAGE_STRING${ac_dC}"zebx 0.0.1"${ac_dD}
 ${ac_dA}PACKAGE_BUGREPORT${ac_dB}PACKAGE_BUGREPORT${ac_dC}"http://blackboxwm.sourceforge.net"${ac_dD}
-${ac_dA}PACKAGE${ac_dB}PACKAGE${ac_dC}"blackbox"${ac_dD}
-${ac_dA}VERSION${ac_dB}VERSION${ac_dC}"0.70.1"${ac_dD}
+${ac_dA}PACKAGE${ac_dB}PACKAGE${ac_dC}"zebx"${ac_dD}
+${ac_dA}VERSION${ac_dB}VERSION${ac_dC}"0.0.1"${ac_dD}
 ${ac_dA}STDC_HEADERS${ac_dB}STDC_HEADERS${ac_dC}1${ac_dD}
 ${ac_dA}HAVE_SYS_TYPES_H${ac_dB}HAVE_SYS_TYPES_H${ac_dC}1${ac_dD}
 ${ac_dA}HAVE_SYS_STAT_H${ac_dB}HAVE_SYS_STAT_H${ac_dC}1${ac_dD}
@@ -928,13 +928,13 @@ CEOF
 /^[	 ]*#[	 ]*undef/!b
 t clr
 : clr
-${ac_uA}PACKAGE_NAME${ac_uB}PACKAGE_NAME${ac_uC}"blackbox"${ac_uD}
-${ac_uA}PACKAGE_TARNAME${ac_uB}PACKAGE_TARNAME${ac_uC}"blackbox"${ac_uD}
-${ac_uA}PACKAGE_VERSION${ac_uB}PACKAGE_VERSION${ac_uC}"0.70.1"${ac_uD}
-${ac_uA}PACKAGE_STRING${ac_uB}PACKAGE_STRING${ac_uC}"blackbox 0.70.1"${ac_uD}
+${ac_uA}PACKAGE_NAME${ac_uB}PACKAGE_NAME${ac_uC}"ZebX"${ac_uD}
+${ac_uA}PACKAGE_TARNAME${ac_uB}PACKAGE_TARNAME${ac_uC}"zebx"${ac_uD}
+${ac_uA}PACKAGE_VERSION${ac_uB}PACKAGE_VERSION${ac_uC}"0.0.1"${ac_uD}
+${ac_uA}PACKAGE_STRING${ac_uB}PACKAGE_STRING${ac_uC}"zebx 0.0.1"${ac_uD}
 ${ac_uA}PACKAGE_BUGREPORT${ac_uB}PACKAGE_BUGREPORT${ac_uC}"http://blackboxwm.sourceforge.net"${ac_uD}
-${ac_uA}PACKAGE${ac_uB}PACKAGE${ac_uC}"blackbox"${ac_uD}
-${ac_uA}VERSION${ac_uB}VERSION${ac_uC}"0.70.1"${ac_uD}
+${ac_uA}PACKAGE${ac_uB}PACKAGE${ac_uC}"zebx"${ac_uD}
+${ac_uA}VERSION${ac_uB}VERSION${ac_uC}"0.0.1"${ac_uD}
 ${ac_uA}STDC_HEADERS${ac_uB}STDC_HEADERS${ac_uC}1${ac_uD}
 ${ac_uA}HAVE_SYS_TYPES_H${ac_uB}HAVE_SYS_TYPES_H${ac_uC}1${ac_uD}
 ${ac_uA}HAVE_SYS_STAT_H${ac_uB}HAVE_SYS_STAT_H${ac_uC}1${ac_uD}

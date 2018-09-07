@@ -1,1 +1,1 @@
-#define __blackbox_version "0.70.1"
+#define __blackbox_version "0.0.1"
