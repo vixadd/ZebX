@@ -1,4 +1,4 @@
-# data/styles/Makefile.am for Blackbox - an X11 Window manager
+# data/styles/Makefile.am for ZebX - an X11 Desktop Environment
 
 styledir = $(pkgdatadir)/styles
 MAINTAINERCLEANFILES = Makefile.in

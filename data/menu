@@ -1,7 +1,4 @@
-# This is the default menu file for Blackbox 0.33.0 and up
-# 
-# Lines beginning with the '#' character are ignored.
-#
+
 # The new syntax is simpler than the old X resource format...
 # Each menu item consists of 2 or 3 fields:
 #
