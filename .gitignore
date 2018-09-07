@@ -12,3 +12,5 @@
 ## of compilation. We don't need it on the version system.
 
 src/blackbox
+stamp-h1
+

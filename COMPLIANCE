@@ -10,10 +10,10 @@ Section 4: Client to Window Manager Communication
 	WM_NORMAL_HINTS:		supported
 	WM_HINTS:			supported
 	WM_CLASS:			unused
- 	WM_TRANSIENT_FOR:		supported
+        WM_TRANSIENT_FOR:		supported
 	WM_PROTOCOLS:			supported
- 	WM_DELETE_WINDOW:		supported
- 	WM_TAKE_FOCUS:			supported
+        WM_DELETE_WINDOW:		supported
+        WM_TAKE_FOCUS:			supported
 	WM_COLORMAP_WINDOWS:		NOT supported
 	WM_CLIENT_MACHINE:		unused
 
@@ -115,7 +115,7 @@ _NET_WM_ALLOWED_ACTIONS:		supported
 	_NET_WM_ACTION_RESIZE:          supported
 	_NET_WM_ACITON_MINIMIZE:	supported
 	_NET_WM_ACTION_SHADE:		supported
- 	_NET_WM_ACTION_STICK:		NOT supported
+        _NET_WM_ACTION_STICK:		NOT supported
 	_NET_WM_ACTION_MAXIMIZE_HORZ:	supported
 	_NET_WM_ACTION_MAXIMIZE_VERT:	supported
 	_NET_WM_ACTION_FULLSCREEN:	supported
