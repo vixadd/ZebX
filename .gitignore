@@ -13,4 +13,12 @@
 
 src/blackbox
 stamp-h1
+data/menu
+doc/blackbox.1
+lib/.libs/libbt.a
+lib/.libs/libbt.la
+lib/.libs/libbt.lai
+lib/libbt.la
+util/bsetroot
+util/bstyleconvert
 
