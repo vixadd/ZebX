@@ -62,16 +62,6 @@ static void signalhandler(int sig) {
 	pending_signals |= (1 << sig);
 }
 
-/**
- * The application object. It provides event delivery, timer
- * activation and signal handling functionality to fit most
- * application needs.
- *
- * Params:
- *		app_name: designated name for the application.
- *		dpy_name: display name of the application.
- *		multi_head: Indicator for more than one display for the application.
- */
 bt::Application::Application(const std::string &app_name, const char *dpy_name, bool multi_head) :
 								_app_name(bt::basename(app_name)),
 								run_state(STARTUP),

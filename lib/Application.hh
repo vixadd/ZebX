@@ -30,7 +30,7 @@ namespace bt {
   protected:
 
 	// Application state enumeration to map application behavior.
-    enum RunState { STARTUP, RUNNING, SHUTDOWN, SIGNALLED };
+    	enum RunState { STARTUP, RUNNING, SHUTDOWN, SIGNALLED };
 
   private:
 
@@ -40,12 +40,15 @@ namespace bt {
       bool extensions;
       int event_basep, error_basep;
     }
+
     shape;
 
     Display *_display;
+    
     std::string _app_name;
 
     RunState run_state; // Current run state.
+
     Time xserver_time;  // Timestamp of the xserver.
 
     // Mapper of window to a specific EventHandler.
@@ -55,16 +58,22 @@ namespace bt {
     EventHandlerMap eventhandlers;
 
 
-    timeval currentTime; //xserver timestamp
+    timeval currentTime; // xserver timestamp
+			 // Used in debugging and testing.
+
     TimerQueue timerList;
+    
     void adjustTimers(const timeval &offset);
 
 
     typedef std::deque<Menu*> MenuStack;
+
     MenuStack menus;
+    
     bool menu_grab;
     void openMenu(Menu *menu);
     void closeMenu(Menu *menu);
+    
     friend class Menu; // give Menu access to the above 2 functions
 
     unsigned int MaskList[8];
