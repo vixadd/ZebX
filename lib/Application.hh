@@ -115,43 +115,121 @@ namespace bt {
     virtual bool process_signal(int signal);
 
   public:
+
+    /*
+     * Constructor for the Application Object.
+     */
     Application(const std::string &app_name, const char *dpy_name = 0,
                 bool multi_head = false);
+    /* DESTRUCTOR */
     virtual ~Application(void);
 
+    /*
+     * Getter for presence of shape extension settings.
+     */
     inline bool hasShapeExtensions(void) const
     { return shape.extensions; }
 
+    /*
+     * Is the application in the booting state?
+     */
     inline bool startingUp(void) const
     { return run_state == STARTUP; }
+
+    /*
+     * Is the application in the running state?
+     */
     inline bool running(void) const
     { return run_state == RUNNING; }
+
+    /*
+     * Is the application in the shutdown state?
+     */
     inline bool shuttingDown(void) const
     { return run_state == SHUTDOWN; }
 
+    /*
+     * To retrieve a new XDisplay reference.
+     */
     ::Display *XDisplay(void) const;
+
+    /*
+     * Retrieving the XDisplay that we want for the Application display.
+     */
     inline const Display& display(void) const
     { return *_display; }
+
+    /*
+     * To retrieve the Xserver time.
+     */
     inline Time XTime() const
     { return xserver_time; }
 
+    /*
+     * Getter for the Application name.
+     */
     inline const std::string &applicationName(void) const
     { return _app_name; }
 
+    /*
+     * Get the button that is referenced in the parameters. And put
+     * it in focus of the user's XPerspective.
+     *
+     * ----------params------------
+     * 		button:            Button number to retrieve
+     * 		modifiers:         num reference for the modifiers.
+     * 		grab_window:       Window to grab relates to the app.
+     * 		owner_events:      Does the button have events attached to it?
+     * 		event_mask:        num reference of the event_mask.
+     * 		pointer_mode:      Is pointer mode enabled. (<Button Assc>)
+     * 		keyboard_mode: <Some weird X11 Mode>
+     * 		confine_to:        Window to confine the search to.
+     * 		cursor:            Cursor reference.
+     * 		allow_scroll_lock: <Some weird X11 lock setting>
+     *
+     */
     void grabButton(unsigned int button, unsigned int modifiers,
                     Window grab_window, bool owner_events,
                     unsigned int event_mask, int pointer_mode,
                     int keyboard_mode, Window confine_to, Cursor cursor,
                     bool allow_scroll_lock) const;
+
+    /*
+     * Remove the Button from focus.
+     * ----------params----------
+     * 		button:       button reference to remove.
+     * 		modifiers:    modifiers used. <TODO: Really don't need this here.>
+     * 		grab_window:  Window associated with the button.
+     */
     void ungrabButton(unsigned int button, unsigned int modifiers,
                       Window grab_window) const;
 
+    /*
+     * Give birth to the application's application and instantiate
+     * the run thread for app operations.
+     */
     void run(void);
+
+
+    /*
+     * Set the shutdown state to signal to the central SP listener
+     * that we want to trash the application as far as the view
+     * is concerned.
+     */
     inline void quit(void)
     { setRunState( SHUTDOWN ); }
 
+    /*
+     * Getter for the ScrollLockMask Setting
+     *
+     * Returns: Is scroll Lock enabled?
+     */
     inline unsigned int scrollLockMask(void) const
     { return ScrollLockMask; }
+
+    /*
+     * Getter for Num Lock Mask
+     */
     inline unsigned int numLockMask(void) const
     { return NumLockMask; }
 
