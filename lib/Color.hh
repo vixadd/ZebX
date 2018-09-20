@@ -34,10 +34,12 @@ namespace bt {
       : _red(r), _green(g), _blue(b),
         _screen(~0u), _pixel(0ul)
     { }
+
     inline Color(const Color &c)
       : _red(c._red), _green(c._green), _blue(c._blue),
         _screen(~0u), _pixel(0ul)
     { }
+
     inline ~Color(void)
     { deallocate(); }
 
@@ -57,6 +59,8 @@ namespace bt {
     inline bool valid(void) const { return _red != -1 && _green != -1 && _blue != -1; }
 
     // operator overrides
+    // TODO - This should be moved to a utils class later on.
+    // Should not be made specific to this class. (ColorUtils)
     inline Color &operator=(const Color &c) { setRGB(c._red, c._green, c._blue); return *this; }
     inline bool operator==(const Color &c) const { return _red == c._red && _green == c._green && _blue == c._blue; }
     inline bool operator!=(const Color &c) const { return !operator==(c); }
@@ -68,9 +72,14 @@ namespace bt {
 
     /** Private variables */
     int _red, _green, _blue;
+
+    /* Screen id we're using */
     mutable unsigned int _screen;
+
+    /* Pixel id we're referencing */
     mutable unsigned long _pixel;
 
+    /* Cache utils class. */
     friend class PenCache;
   };
 
