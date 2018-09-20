@@ -13,23 +13,46 @@ namespace bt {
   // forward declarations
   class ScreenInfo;
 
+  /*
+   * Display class <SINGLETON>
+   */
   class Display : public NoCopy {
+  // PRIVATE VARS
   private:
     ::Display *xdisplay;
     ScreenInfo** screen_info_list;
     size_t screen_info_count;
 
   public:
+    /*
+     * Display Constructor
+     * ----------params-----------
+     * dpy_name   : Display name
+     * multi_head : Multiple heads present.
+     */
     Display(const char *dpy_name, bool multi_head);
+
+    // DESTRUCTOR
     ~Display(void);
 
+    // Get the current XDisplay object for this head.
+    //
+    // Return: XDisplay for this Head.
     inline ::Display* XDisplay(void) const
     { return xdisplay; }
 
+    // Return Number of screens.
     inline unsigned int screenCount(void) const
     { return screen_info_count; }
+
+    /*
+     * Return screen info object of the specified Screen Id.
+     * ----------params------------
+     * i : Screen ID as specified in '/etc/X11/xorg.conf'
+     */
     const ScreenInfo &screenInfo(unsigned int i) const;
   };
+
 
   class ScreenInfo: public NoCopy {
   private:
