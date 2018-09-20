@@ -8,6 +8,7 @@
 
 #include <assert.h>
 
+//TODO - ZUVA ?: Add more common icons for file explorers and such.
 
 static const int left_width  = 9;
 static const int left_height = 9;
@@ -42,6 +43,12 @@ static const unsigned char check_bits[] =
 
 namespace bt {
 
+  /*
+   * BitmapLoader
+   *
+   * The loader utility class that allows us to
+   * load new drawables.
+   */
   class BitmapLoader {
   public:
     inline BitmapLoader(const Display &display)
@@ -107,7 +114,22 @@ void bt::BitmapLoader::unload(::Drawable &drawable) {
   drawable = 0;
 }
 
-
+/*
+ * Method: drawBitmap
+ *
+ * This method assigns the map of the screen area. It
+ * generates the XMask with the drawable from the map, and
+ * then fills in the drawable region using the map calculations.
+ *
+ * All of the fil-in claculations are handeled in X with the
+ * bit data we provide.
+ *
+ * --------------params---------------
+ * bitmap   :
+ * pen      : pen that we use to draw.
+ * drawable : X11 drawable object to use.
+ * rect     : Rectangle area encompassing the map.
+ */
 void bt::drawBitmap(const bt::Bitmap &bitmap, const bt::Pen &pen,
                     ::Drawable drawable, const bt::Rect &rect) {
   assert(bitmap.screen() == pen.screen());
