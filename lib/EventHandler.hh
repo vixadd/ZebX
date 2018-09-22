@@ -22,15 +22,19 @@ namespace bt {
     // Mouse button press.
     inline virtual void buttonPressEvent(const XButtonEvent * const)
     { }
+
     // Mouse button release.
     inline virtual void buttonReleaseEvent(const XButtonEvent * const)
     { }
+
     // Mouse movement.
     inline virtual void motionNotifyEvent(const XMotionEvent * const)
     { }
+
     // Key press.
     inline virtual void keyPressEvent(const XKeyEvent * const)
     { }
+
     // Key release.
     inline virtual void keyReleaseEvent(const XKeyEvent * const)
     { }
@@ -38,15 +42,19 @@ namespace bt {
     // Window configure (size, position, stacking, etc.).
     inline virtual void configureNotifyEvent(const XConfigureEvent * const)
     { }
+
     // Window shown.
     inline virtual void mapNotifyEvent(const XMapEvent * const)
     { }
+
     // Window hidden.
     inline virtual void unmapNotifyEvent(const XUnmapEvent * const)
     { }
+
     // Window reparented.
     inline virtual void reparentNotifyEvent(const XReparentEvent * const)
     { }
+
     // Window destroyed.
     inline virtual void destroyNotifyEvent(const XDestroyWindowEvent * const)
     { }
@@ -54,6 +62,7 @@ namespace bt {
     // Mouse entered window.
     inline virtual void enterNotifyEvent(const XCrossingEvent * const)
     { }
+
     // Mouse left window.
     inline virtual void leaveNotifyEvent(const XCrossingEvent * const)
     { }
@@ -76,6 +85,9 @@ namespace bt {
     { }
 
   protected:
+
+    // Constructor for the event handeler is protected.
+    // Non-encapsulated values can be directly accessed by inheriting classes.
     inline EventHandler(void)
     { }
   };
