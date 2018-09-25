@@ -14,7 +14,7 @@ Section 4: Client to Window Manager Communication
 	WM_PROTOCOLS:			supported
         WM_DELETE_WINDOW:		supported
         WM_TAKE_FOCUS:			supported
-	WM_COLORMAP_WINDOWS:		NOT supported
+	WM_COLORMAP_WINDOWS:		unused
 	WM_CLIENT_MACHINE:		unused
 
 4.1.3 Window Manager Properties:
