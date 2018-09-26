@@ -11,6 +11,8 @@
 bt::EWMH::EWMH(const Display &_display)
   : display(_display)
 {
+
+	// References for the state variables.
   const struct AtomRef {
     const char *name;
     Atom *atom;
