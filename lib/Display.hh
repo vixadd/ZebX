@@ -51,11 +51,20 @@ namespace bt {
      * i : Screen ID as specified in '/etc/X11/xorg.conf'
      */
     const ScreenInfo &screenInfo(unsigned int i) const;
+
   };
 
 
+  /*
+   * Singelton screen-info class to tell us about the
+   * Screen itself.
+   */
   class ScreenInfo: public NoCopy {
+
   private:
+
+	// Private varaibles that controls the main
+	// environment for the displays.
     Display& _display;
     Visual *_visual;
     Window _rootwindow;
@@ -66,33 +75,76 @@ namespace bt {
     Rect _rect;
 
   public:
+
+    /*
+     * Constructor for the ScreenInfo class.
+     * This will hold information for the Display at hand.
+     */
     ScreenInfo(Display& d, unsigned int num);
 
+    /*
+     * Getter for the display variable
+     */
     inline Display& display(void) const
     { return _display; }
 
+    /*
+     * Getter on the Visual
+     */
     inline Visual *visual(void) const
     { return _visual; }
+
+    /*
+     * Retrieve the root window of the app
+     */
     inline Window rootWindow(void) const
     { return _rootwindow; }
+
+    /*
+     * getter for the Colormap.
+     * -- Should be deprecated (TODO)
+     */
     inline Colormap colormap(void) const
     { return _colormap; }
 
+    /*
+     * retrieve the depth of the window.
+     */
     inline int depth(void) const
     { return _depth; }
 
+    /*
+     * What screen number the window is displayed on.
+     */
     inline unsigned int screenNumber(void) const
     { return _screennumber; }
 
+    /*
+     * Rectangle dimension of the window.
+     * We probably don't need this since we never use it.
+     */
     inline const Rect& rect(void) const
     { return _rect; }
+
+    /*
+     * Width of the window.
+     */
     inline unsigned int width(void) const
     { return _rect.width(); }
+
+    /*
+     * Height of the window.
+     */
     inline unsigned int height(void) const
     { return _rect.height(); }
 
+    /*
+     * Display string or name banner on the window that is
+     * displayed.
+     */
     inline const std::string& displayString(void) const
     { return _displaystring; }
+
   };
 
 } // namespace bt
