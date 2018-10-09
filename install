@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#=========================================================#
+#           ZebX install script that sets up the          #
+#           window manager that ZebX runs off of.         #
+#                                                         #
+#                   Author: David Kroell                  #
+#  :: Written under projects for Aridine Technologies. :: #
+#                                                         #
+#=========================================================#
+sudo
+
+
+# Configure the system against the current system.
+./configure
+
+# Make the script
+make
+
+# Make install
+sudo make install
+
+# publish the output to a new .xinitrc file in the Home directory
+echo blackbox >> ~/.xinitrc
