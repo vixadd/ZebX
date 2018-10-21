@@ -22,3 +22,12 @@ lib/libbt.la
 util/bsetroot
 util/bstyleconvert
 
+
+## Configuring the system can cause a bunch of .dep files to
+## be created. There are a lot of doc and other files that
+## need to be manaaged in the whole compilation. These files
+## are created by the compilation.
+
+util/.deps/
+src/.deps/
+lib/.deps/
