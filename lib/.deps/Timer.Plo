@@ -1,5 +1,4 @@
-main.o: main.cc /usr/include/stdc-predef.h blackbox.hh \
- ../lib/Application.hh ../lib/Timer.hh ../lib/Util.hh \
+Timer.lo: Timer.cc /usr/include/stdc-predef.h Timer.hh Util.hh \
  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/libc-header-start.h \
@@ -125,30 +124,13 @@ main.o: main.cc /usr/include/stdc-predef.h blackbox.hh \
  /usr/include/c++/8.2.1/bits/stl_bvector.h \
  /usr/include/c++/8.2.1/bits/vector.tcc \
  /usr/include/c++/8.2.1/bits/stl_queue.h \
- /usr/include/c++/8.2.1/bits/uses_allocator.h /usr/include/c++/8.2.1/map \
- /usr/include/c++/8.2.1/bits/stl_tree.h \
- /usr/include/c++/8.2.1/ext/aligned_buffer.h \
- /usr/include/c++/8.2.1/bits/stl_map.h /usr/include/c++/8.2.1/tuple \
- /usr/include/c++/8.2.1/array /usr/include/c++/8.2.1/stdexcept \
- /usr/include/c++/8.2.1/bits/invoke.h \
- /usr/include/c++/8.2.1/bits/stl_multimap.h ../lib/Util.hh \
- /usr/include/c++/8.2.1/cstring /usr/include/string.h \
- /usr/include/strings.h BlackboxResource.hh ScreenResource.hh \
- ../lib/Bitmap.hh ../lib/Color.hh ../lib/Font.hh ../lib/Unicode.hh \
- ../lib/Texture.hh ../lib/Color.hh ../lib/Timer.hh \
- /usr/include/c++/8.2.1/list /usr/include/c++/8.2.1/bits/stl_list.h \
- /usr/include/c++/8.2.1/bits/allocated_ptr.h \
- /usr/include/c++/8.2.1/bits/list.tcc ../version.h
+ /usr/include/c++/8.2.1/bits/uses_allocator.h /usr/include/sys/time.h
 
 /usr/include/stdc-predef.h:
 
-blackbox.hh:
+Timer.hh:
 
-../lib/Application.hh:
-
-../lib/Timer.hh:
-
-../lib/Util.hh:
+Util.hh:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h:
 
@@ -508,56 +490,4 @@ blackbox.hh:
 
 /usr/include/c++/8.2.1/bits/uses_allocator.h:
 
-/usr/include/c++/8.2.1/map:
-
-/usr/include/c++/8.2.1/bits/stl_tree.h:
-
-/usr/include/c++/8.2.1/ext/aligned_buffer.h:
-
-/usr/include/c++/8.2.1/bits/stl_map.h:
-
-/usr/include/c++/8.2.1/tuple:
-
-/usr/include/c++/8.2.1/array:
-
-/usr/include/c++/8.2.1/stdexcept:
-
-/usr/include/c++/8.2.1/bits/invoke.h:
-
-/usr/include/c++/8.2.1/bits/stl_multimap.h:
-
-../lib/Util.hh:
-
-/usr/include/c++/8.2.1/cstring:
-
-/usr/include/string.h:
-
-/usr/include/strings.h:
-
-BlackboxResource.hh:
-
-ScreenResource.hh:
-
-../lib/Bitmap.hh:
-
-../lib/Color.hh:
-
-../lib/Font.hh:
-
-../lib/Unicode.hh:
-
-../lib/Texture.hh:
-
-../lib/Color.hh:
-
-../lib/Timer.hh:
-
-/usr/include/c++/8.2.1/list:
-
-/usr/include/c++/8.2.1/bits/stl_list.h:
-
-/usr/include/c++/8.2.1/bits/allocated_ptr.h:
-
-/usr/include/c++/8.2.1/bits/list.tcc:
-
-../version.h:
+/usr/include/sys/time.h:

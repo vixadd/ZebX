@@ -1,17 +1,10 @@
-main.o: main.cc /usr/include/stdc-predef.h blackbox.hh \
- ../lib/Application.hh ../lib/Timer.hh ../lib/Util.hh \
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
- /usr/include/linux/limits.h /usr/include/bits/posix2_lim.h \
- /usr/include/bits/xopen_lim.h /usr/include/bits/uio_lim.h \
+Font.lo: Font.cc /usr/include/stdc-predef.h Font.hh Unicode.hh \
  /usr/include/c++/8.2.1/string \
  /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/8.2.1/bits/stringfwd.h \
  /usr/include/c++/8.2.1/bits/memoryfwd.h \
@@ -34,8 +27,8 @@ main.o: main.cc /usr/include/stdc-predef.h blackbox.hh \
  /usr/include/c++/8.2.1/debug/debug.h \
  /usr/include/c++/8.2.1/bits/predefined_ops.h \
  /usr/include/c++/8.2.1/bits/postypes.h /usr/include/c++/8.2.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
+ /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stdarg.h \
  /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
@@ -104,59 +97,60 @@ main.o: main.cc /usr/include/stdc-predef.h blackbox.hh \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
  /usr/include/c++/8.2.1/bits/functional_hash.h \
- /usr/include/c++/8.2.1/bits/basic_string.tcc /usr/include/X11/Xlib.h \
- /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
- /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
- /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
- /usr/include/c++/8.2.1/algorithm /usr/include/c++/8.2.1/utility \
- /usr/include/c++/8.2.1/bits/stl_relops.h \
- /usr/include/c++/8.2.1/bits/stl_algo.h \
- /usr/include/c++/8.2.1/bits/algorithmfwd.h \
- /usr/include/c++/8.2.1/bits/stl_heap.h \
- /usr/include/c++/8.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/8.2.1/bits/stl_construct.h \
- /usr/include/c++/8.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/8.2.1/limits /usr/include/c++/8.2.1/queue \
- /usr/include/c++/8.2.1/deque \
- /usr/include/c++/8.2.1/bits/stl_uninitialized.h \
- /usr/include/c++/8.2.1/bits/stl_deque.h \
- /usr/include/c++/8.2.1/bits/deque.tcc /usr/include/c++/8.2.1/vector \
- /usr/include/c++/8.2.1/bits/stl_vector.h \
- /usr/include/c++/8.2.1/bits/stl_bvector.h \
- /usr/include/c++/8.2.1/bits/vector.tcc \
- /usr/include/c++/8.2.1/bits/stl_queue.h \
- /usr/include/c++/8.2.1/bits/uses_allocator.h /usr/include/c++/8.2.1/map \
+ /usr/include/c++/8.2.1/bits/basic_string.tcc Util.hh \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/X11/Xlib.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h Color.hh Display.hh Rect.hh Pen.hh \
+ Resource.hh /usr/include/c++/8.2.1/map \
  /usr/include/c++/8.2.1/bits/stl_tree.h \
  /usr/include/c++/8.2.1/ext/aligned_buffer.h \
  /usr/include/c++/8.2.1/bits/stl_map.h /usr/include/c++/8.2.1/tuple \
+ /usr/include/c++/8.2.1/utility /usr/include/c++/8.2.1/bits/stl_relops.h \
  /usr/include/c++/8.2.1/array /usr/include/c++/8.2.1/stdexcept \
+ /usr/include/c++/8.2.1/bits/uses_allocator.h \
  /usr/include/c++/8.2.1/bits/invoke.h \
- /usr/include/c++/8.2.1/bits/stl_multimap.h ../lib/Util.hh \
- /usr/include/c++/8.2.1/cstring /usr/include/string.h \
- /usr/include/strings.h BlackboxResource.hh ScreenResource.hh \
- ../lib/Bitmap.hh ../lib/Color.hh ../lib/Font.hh ../lib/Unicode.hh \
- ../lib/Texture.hh ../lib/Color.hh ../lib/Timer.hh \
- /usr/include/c++/8.2.1/list /usr/include/c++/8.2.1/bits/stl_list.h \
- /usr/include/c++/8.2.1/bits/allocated_ptr.h \
- /usr/include/c++/8.2.1/bits/list.tcc ../version.h
+ /usr/include/c++/8.2.1/bits/stl_multimap.h /usr/include/c++/8.2.1/vector \
+ /usr/include/c++/8.2.1/bits/stl_construct.h \
+ /usr/include/c++/8.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/8.2.1/bits/stl_vector.h \
+ /usr/include/c++/8.2.1/bits/stl_bvector.h \
+ /usr/include/c++/8.2.1/bits/vector.tcc /usr/include/X11/Xft/Xft.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/8.2.1/stdlib.h \
+ /usr/include/setjmp.h /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/fontconfig/fontconfig.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/bits/statx.h \
+ /usr/include/X11/extensions/Xrender.h \
+ /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
+ /usr/include/X11/Xft/XftCompat.h /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
-blackbox.hh:
+Font.hh:
 
-../lib/Application.hh:
+Unicode.hh:
 
-../lib/Timer.hh:
+/usr/include/c++/8.2.1/string:
 
-../lib/Util.hh:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/bits/libc-header-start.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/features.h:
 
@@ -169,24 +163,6 @@ blackbox.hh:
 /usr/include/gnu/stubs.h:
 
 /usr/include/gnu/stubs-64.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/bits/xopen_lim.h:
-
-/usr/include/bits/uio_lim.h:
-
-/usr/include/c++/8.2.1/string:
-
-/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
@@ -235,6 +211,8 @@ blackbox.hh:
 /usr/include/c++/8.2.1/cwchar:
 
 /usr/include/wchar.h:
+
+/usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/floatn.h:
 
@@ -452,6 +430,26 @@ blackbox.hh:
 
 /usr/include/c++/8.2.1/bits/basic_string.tcc:
 
+Util.hh:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/uio_lim.h:
+
 /usr/include/X11/Xlib.h:
 
 /usr/include/X11/X.h:
@@ -466,47 +464,15 @@ blackbox.hh:
 
 /usr/include/X11/keysymdef.h:
 
-/usr/include/c++/8.2.1/algorithm:
+Color.hh:
 
-/usr/include/c++/8.2.1/utility:
+Display.hh:
 
-/usr/include/c++/8.2.1/bits/stl_relops.h:
+Rect.hh:
 
-/usr/include/c++/8.2.1/bits/stl_algo.h:
+Pen.hh:
 
-/usr/include/c++/8.2.1/bits/algorithmfwd.h:
-
-/usr/include/c++/8.2.1/bits/stl_heap.h:
-
-/usr/include/c++/8.2.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/8.2.1/bits/stl_construct.h:
-
-/usr/include/c++/8.2.1/bits/uniform_int_dist.h:
-
-/usr/include/c++/8.2.1/limits:
-
-/usr/include/c++/8.2.1/queue:
-
-/usr/include/c++/8.2.1/deque:
-
-/usr/include/c++/8.2.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/8.2.1/bits/stl_deque.h:
-
-/usr/include/c++/8.2.1/bits/deque.tcc:
-
-/usr/include/c++/8.2.1/vector:
-
-/usr/include/c++/8.2.1/bits/stl_vector.h:
-
-/usr/include/c++/8.2.1/bits/stl_bvector.h:
-
-/usr/include/c++/8.2.1/bits/vector.tcc:
-
-/usr/include/c++/8.2.1/bits/stl_queue.h:
-
-/usr/include/c++/8.2.1/bits/uses_allocator.h:
+Resource.hh:
 
 /usr/include/c++/8.2.1/map:
 
@@ -518,46 +484,80 @@ blackbox.hh:
 
 /usr/include/c++/8.2.1/tuple:
 
+/usr/include/c++/8.2.1/utility:
+
+/usr/include/c++/8.2.1/bits/stl_relops.h:
+
 /usr/include/c++/8.2.1/array:
 
 /usr/include/c++/8.2.1/stdexcept:
+
+/usr/include/c++/8.2.1/bits/uses_allocator.h:
 
 /usr/include/c++/8.2.1/bits/invoke.h:
 
 /usr/include/c++/8.2.1/bits/stl_multimap.h:
 
-../lib/Util.hh:
+/usr/include/c++/8.2.1/vector:
 
-/usr/include/c++/8.2.1/cstring:
+/usr/include/c++/8.2.1/bits/stl_construct.h:
+
+/usr/include/c++/8.2.1/bits/stl_uninitialized.h:
+
+/usr/include/c++/8.2.1/bits/stl_vector.h:
+
+/usr/include/c++/8.2.1/bits/stl_bvector.h:
+
+/usr/include/c++/8.2.1/bits/vector.tcc:
+
+/usr/include/X11/Xft/Xft.h:
+
+/usr/include/freetype2/ft2build.h:
+
+/usr/include/freetype2/freetype/config/ftheader.h:
+
+/usr/include/freetype2/freetype/freetype.h:
+
+/usr/include/freetype2/freetype/config/ftconfig.h:
+
+/usr/include/freetype2/freetype/config/ftoption.h:
+
+/usr/include/freetype2/freetype/config/ftstdlib.h:
 
 /usr/include/string.h:
 
 /usr/include/strings.h:
 
-BlackboxResource.hh:
+/usr/include/c++/8.2.1/stdlib.h:
 
-ScreenResource.hh:
+/usr/include/setjmp.h:
 
-../lib/Bitmap.hh:
+/usr/include/freetype2/freetype/fttypes.h:
 
-../lib/Color.hh:
+/usr/include/freetype2/freetype/ftsystem.h:
 
-../lib/Font.hh:
+/usr/include/freetype2/freetype/ftimage.h:
 
-../lib/Unicode.hh:
+/usr/include/freetype2/freetype/fterrors.h:
 
-../lib/Texture.hh:
+/usr/include/freetype2/freetype/ftmoderr.h:
 
-../lib/Color.hh:
+/usr/include/freetype2/freetype/fterrdef.h:
 
-../lib/Timer.hh:
+/usr/include/fontconfig/fontconfig.h:
 
-/usr/include/c++/8.2.1/list:
+/usr/include/sys/stat.h:
 
-/usr/include/c++/8.2.1/bits/stl_list.h:
+/usr/include/bits/stat.h:
 
-/usr/include/c++/8.2.1/bits/allocated_ptr.h:
+/usr/include/bits/statx.h:
 
-/usr/include/c++/8.2.1/bits/list.tcc:
+/usr/include/X11/extensions/Xrender.h:
 
-../version.h:
+/usr/include/X11/extensions/render.h:
+
+/usr/include/X11/Xdefs.h:
+
+/usr/include/X11/Xft/XftCompat.h:
+
+/usr/include/assert.h:

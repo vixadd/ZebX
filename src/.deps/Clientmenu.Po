@@ -1,126 +1,144 @@
 Clientmenu.o: Clientmenu.cc /usr/include/stdc-predef.h Clientmenu.hh \
- ../lib/Menu.hh ../lib/Color.hh /usr/include/c++/6/string \
- /usr/include/i386-linux-gnu/c++/6/bits/c++config.h \
- /usr/include/i386-linux-gnu/c++/6/bits/os_defines.h \
- /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
- /usr/include/i386-linux-gnu/bits/wordsize.h \
- /usr/include/i386-linux-gnu/gnu/stubs.h \
- /usr/include/i386-linux-gnu/gnu/stubs-32.h \
- /usr/include/i386-linux-gnu/c++/6/bits/cpu_defines.h \
- /usr/include/c++/6/bits/stringfwd.h /usr/include/c++/6/bits/memoryfwd.h \
- /usr/include/c++/6/bits/char_traits.h \
- /usr/include/c++/6/bits/stl_algobase.h \
- /usr/include/c++/6/bits/functexcept.h \
- /usr/include/c++/6/bits/exception_defines.h \
- /usr/include/c++/6/bits/cpp_type_traits.h \
- /usr/include/c++/6/ext/type_traits.h \
- /usr/include/c++/6/ext/numeric_traits.h \
- /usr/include/c++/6/bits/stl_pair.h /usr/include/c++/6/bits/move.h \
- /usr/include/c++/6/bits/concept_check.h /usr/include/c++/6/type_traits \
- /usr/include/c++/6/bits/stl_iterator_base_types.h \
- /usr/include/c++/6/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/6/debug/assertions.h \
- /usr/include/c++/6/bits/stl_iterator.h \
- /usr/include/c++/6/bits/ptr_traits.h /usr/include/c++/6/debug/debug.h \
- /usr/include/c++/6/bits/predefined_ops.h \
- /usr/include/c++/6/bits/postypes.h /usr/include/c++/6/cwchar \
- /usr/include/wchar.h /usr/include/stdio.h \
- /usr/lib/gcc/i686-linux-gnu/6/include/stdarg.h \
- /usr/include/i386-linux-gnu/bits/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/6/include/stddef.h /usr/include/xlocale.h \
- /usr/include/c++/6/cstdint \
- /usr/lib/gcc/i686-linux-gnu/6/include/stdint.h /usr/include/stdint.h \
- /usr/include/c++/6/bits/allocator.h \
- /usr/include/i386-linux-gnu/c++/6/bits/c++allocator.h \
- /usr/include/c++/6/ext/new_allocator.h /usr/include/c++/6/new \
- /usr/include/c++/6/exception \
- /usr/include/c++/6/bits/atomic_lockfree_defines.h \
- /usr/include/c++/6/bits/exception_ptr.h \
- /usr/include/c++/6/bits/nested_exception.h \
- /usr/include/c++/6/bits/localefwd.h \
- /usr/include/i386-linux-gnu/c++/6/bits/c++locale.h \
- /usr/include/c++/6/clocale /usr/include/locale.h \
- /usr/include/i386-linux-gnu/bits/locale.h /usr/include/c++/6/iosfwd \
- /usr/include/c++/6/cctype /usr/include/ctype.h \
- /usr/include/i386-linux-gnu/bits/types.h \
- /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/endian.h \
- /usr/include/i386-linux-gnu/bits/endian.h \
- /usr/include/i386-linux-gnu/bits/byteswap.h \
- /usr/include/i386-linux-gnu/bits/byteswap-16.h \
- /usr/include/c++/6/bits/ostream_insert.h \
- /usr/include/c++/6/bits/cxxabi_forced.h \
- /usr/include/c++/6/bits/stl_function.h \
- /usr/include/c++/6/backward/binders.h \
- /usr/include/c++/6/bits/range_access.h \
- /usr/include/c++/6/initializer_list \
- /usr/include/c++/6/bits/basic_string.h \
- /usr/include/c++/6/ext/atomicity.h \
- /usr/include/i386-linux-gnu/c++/6/bits/gthr.h \
- /usr/include/i386-linux-gnu/c++/6/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
- /usr/include/i386-linux-gnu/bits/sched.h \
- /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/timex.h \
- /usr/include/i386-linux-gnu/bits/pthreadtypes.h \
- /usr/include/i386-linux-gnu/bits/setjmp.h \
- /usr/include/i386-linux-gnu/c++/6/bits/atomic_word.h \
- /usr/include/c++/6/ext/alloc_traits.h \
- /usr/include/c++/6/bits/alloc_traits.h \
- /usr/include/c++/6/ext/string_conversions.h /usr/include/c++/6/cstdlib \
- /usr/include/stdlib.h /usr/include/i386-linux-gnu/bits/waitflags.h \
- /usr/include/i386-linux-gnu/bits/waitstatus.h \
- /usr/include/i386-linux-gnu/sys/types.h \
- /usr/include/i386-linux-gnu/sys/select.h \
- /usr/include/i386-linux-gnu/bits/select.h \
- /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/i386-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/6/cstdio /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h /usr/include/c++/6/cerrno \
- /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
+ ../lib/Menu.hh ../lib/Color.hh /usr/include/c++/8.2.1/string \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/8.2.1/bits/stringfwd.h \
+ /usr/include/c++/8.2.1/bits/memoryfwd.h \
+ /usr/include/c++/8.2.1/bits/char_traits.h \
+ /usr/include/c++/8.2.1/bits/stl_algobase.h \
+ /usr/include/c++/8.2.1/bits/functexcept.h \
+ /usr/include/c++/8.2.1/bits/exception_defines.h \
+ /usr/include/c++/8.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/8.2.1/ext/type_traits.h \
+ /usr/include/c++/8.2.1/ext/numeric_traits.h \
+ /usr/include/c++/8.2.1/bits/stl_pair.h \
+ /usr/include/c++/8.2.1/bits/move.h \
+ /usr/include/c++/8.2.1/bits/concept_check.h \
+ /usr/include/c++/8.2.1/type_traits \
+ /usr/include/c++/8.2.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/8.2.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/8.2.1/debug/assertions.h \
+ /usr/include/c++/8.2.1/bits/stl_iterator.h \
+ /usr/include/c++/8.2.1/bits/ptr_traits.h \
+ /usr/include/c++/8.2.1/debug/debug.h \
+ /usr/include/c++/8.2.1/bits/predefined_ops.h \
+ /usr/include/c++/8.2.1/bits/postypes.h /usr/include/c++/8.2.1/cwchar \
+ /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/c++/8.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h /usr/include/c++/8.2.1/bits/allocator.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/8.2.1/ext/new_allocator.h /usr/include/c++/8.2.1/new \
+ /usr/include/c++/8.2.1/exception /usr/include/c++/8.2.1/bits/exception.h \
+ /usr/include/c++/8.2.1/bits/exception_ptr.h \
+ /usr/include/c++/8.2.1/bits/cxxabi_init_exception.h \
+ /usr/include/c++/8.2.1/typeinfo /usr/include/c++/8.2.1/bits/hash_bytes.h \
+ /usr/include/c++/8.2.1/bits/nested_exception.h \
+ /usr/include/c++/8.2.1/bits/localefwd.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/8.2.1/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/8.2.1/iosfwd \
+ /usr/include/c++/8.2.1/cctype /usr/include/ctype.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h \
+ /usr/include/c++/8.2.1/bits/ostream_insert.h \
+ /usr/include/c++/8.2.1/bits/cxxabi_forced.h \
+ /usr/include/c++/8.2.1/bits/stl_function.h \
+ /usr/include/c++/8.2.1/backward/binders.h \
+ /usr/include/c++/8.2.1/bits/range_access.h \
+ /usr/include/c++/8.2.1/initializer_list \
+ /usr/include/c++/8.2.1/bits/basic_string.h \
+ /usr/include/c++/8.2.1/ext/atomicity.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/sched.h \
+ /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
+ /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/bits/types/struct_itimerspec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/setjmp.h \
+ /usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/8.2.1/ext/alloc_traits.h \
+ /usr/include/c++/8.2.1/bits/alloc_traits.h \
+ /usr/include/c++/8.2.1/ext/string_conversions.h \
+ /usr/include/c++/8.2.1/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/8.2.1/bits/std_abs.h /usr/include/c++/8.2.1/cstdio \
+ /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
+ /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/c++/8.2.1/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/c++/6/bits/functional_hash.h \
- /usr/include/c++/6/bits/hash_bytes.h \
- /usr/include/c++/6/bits/basic_string.tcc ../lib/EventHandler.hh \
+ /usr/include/bits/types/error_t.h \
+ /usr/include/c++/8.2.1/bits/functional_hash.h \
+ /usr/include/c++/8.2.1/bits/basic_string.tcc ../lib/EventHandler.hh \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h ../lib/Font.hh \
  ../lib/Unicode.hh ../lib/Util.hh \
- /usr/lib/gcc/i686-linux-gnu/6/include-fixed/limits.h \
- /usr/lib/gcc/i686-linux-gnu/6/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
- /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/i386-linux-gnu/bits/posix2_lim.h \
- /usr/include/i386-linux-gnu/bits/xopen_lim.h /usr/include/X11/Xutil.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/X11/Xutil.h \
  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h ../lib/Rect.hh \
- ../lib/Texture.hh ../lib/Timer.hh /usr/include/c++/6/algorithm \
- /usr/include/c++/6/utility /usr/include/c++/6/bits/stl_relops.h \
- /usr/include/c++/6/bits/stl_algo.h \
- /usr/include/c++/6/bits/algorithmfwd.h \
- /usr/include/c++/6/bits/stl_heap.h /usr/include/c++/6/bits/stl_tempbuf.h \
- /usr/include/c++/6/bits/stl_construct.h \
- /usr/include/c++/6/bits/uniform_int_dist.h /usr/include/c++/6/limits \
- /usr/include/c++/6/queue /usr/include/c++/6/deque \
- /usr/include/c++/6/bits/stl_uninitialized.h \
- /usr/include/c++/6/bits/stl_deque.h /usr/include/c++/6/bits/deque.tcc \
- /usr/include/c++/6/vector /usr/include/c++/6/bits/stl_vector.h \
- /usr/include/c++/6/bits/stl_bvector.h /usr/include/c++/6/bits/vector.tcc \
- /usr/include/c++/6/bits/stl_queue.h \
- /usr/include/c++/6/bits/uses_allocator.h /usr/include/c++/6/list \
- /usr/include/c++/6/bits/stl_list.h \
- /usr/include/c++/6/bits/allocated_ptr.h \
- /usr/include/c++/6/ext/aligned_buffer.h /usr/include/c++/6/bits/list.tcc \
- Window.hh BlackboxResource.hh ScreenResource.hh ../lib/Bitmap.hh \
- ../lib/Color.hh ../lib/Font.hh ../lib/Texture.hh ../lib/Util.hh \
- ../lib/Timer.hh /usr/include/strings.h Screen.hh StackingList.hh \
- blackbox.hh ../lib/Application.hh /usr/include/c++/6/map \
- /usr/include/c++/6/bits/stl_tree.h /usr/include/c++/6/bits/stl_map.h \
- /usr/include/c++/6/tuple /usr/include/c++/6/array \
- /usr/include/c++/6/stdexcept /usr/include/c++/6/bits/stl_multimap.h \
- /usr/include/c++/6/cstring /usr/include/string.h ../lib/Display.hh \
+ ../lib/Texture.hh ../lib/Timer.hh /usr/include/c++/8.2.1/algorithm \
+ /usr/include/c++/8.2.1/utility /usr/include/c++/8.2.1/bits/stl_relops.h \
+ /usr/include/c++/8.2.1/bits/stl_algo.h \
+ /usr/include/c++/8.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/8.2.1/bits/stl_heap.h \
+ /usr/include/c++/8.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/8.2.1/bits/stl_construct.h \
+ /usr/include/c++/8.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/8.2.1/limits /usr/include/c++/8.2.1/queue \
+ /usr/include/c++/8.2.1/deque \
+ /usr/include/c++/8.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/8.2.1/bits/stl_deque.h \
+ /usr/include/c++/8.2.1/bits/deque.tcc /usr/include/c++/8.2.1/vector \
+ /usr/include/c++/8.2.1/bits/stl_vector.h \
+ /usr/include/c++/8.2.1/bits/stl_bvector.h \
+ /usr/include/c++/8.2.1/bits/vector.tcc \
+ /usr/include/c++/8.2.1/bits/stl_queue.h \
+ /usr/include/c++/8.2.1/bits/uses_allocator.h /usr/include/c++/8.2.1/list \
+ /usr/include/c++/8.2.1/bits/stl_list.h \
+ /usr/include/c++/8.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/8.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/8.2.1/bits/list.tcc Window.hh BlackboxResource.hh \
+ ScreenResource.hh ../lib/Bitmap.hh ../lib/Color.hh ../lib/Font.hh \
+ ../lib/Texture.hh ../lib/Util.hh ../lib/Timer.hh /usr/include/strings.h \
+ Screen.hh StackingList.hh blackbox.hh ../lib/Application.hh \
+ /usr/include/c++/8.2.1/map /usr/include/c++/8.2.1/bits/stl_tree.h \
+ /usr/include/c++/8.2.1/bits/stl_map.h /usr/include/c++/8.2.1/tuple \
+ /usr/include/c++/8.2.1/array /usr/include/c++/8.2.1/stdexcept \
+ /usr/include/c++/8.2.1/bits/invoke.h \
+ /usr/include/c++/8.2.1/bits/stl_multimap.h \
+ /usr/include/c++/8.2.1/cstring /usr/include/string.h ../lib/Display.hh \
  ../lib/EWMH.hh ../lib/Display.hh ../lib/EventHandler.hh
 
 /usr/include/stdc-predef.h:
@@ -131,229 +149,289 @@ Clientmenu.hh:
 
 ../lib/Color.hh:
 
-/usr/include/c++/6/string:
+/usr/include/c++/8.2.1/string:
 
-/usr/include/i386-linux-gnu/c++/6/bits/c++config.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/os_defines.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/features.h:
 
-/usr/include/i386-linux-gnu/sys/cdefs.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/i386-linux-gnu/bits/wordsize.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/i386-linux-gnu/gnu/stubs.h:
+/usr/include/bits/long-double.h:
 
-/usr/include/i386-linux-gnu/gnu/stubs-32.h:
+/usr/include/gnu/stubs.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/cpu_defines.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/include/c++/6/bits/stringfwd.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/c++/6/bits/memoryfwd.h:
+/usr/include/c++/8.2.1/bits/stringfwd.h:
 
-/usr/include/c++/6/bits/char_traits.h:
+/usr/include/c++/8.2.1/bits/memoryfwd.h:
 
-/usr/include/c++/6/bits/stl_algobase.h:
+/usr/include/c++/8.2.1/bits/char_traits.h:
 
-/usr/include/c++/6/bits/functexcept.h:
+/usr/include/c++/8.2.1/bits/stl_algobase.h:
 
-/usr/include/c++/6/bits/exception_defines.h:
+/usr/include/c++/8.2.1/bits/functexcept.h:
 
-/usr/include/c++/6/bits/cpp_type_traits.h:
+/usr/include/c++/8.2.1/bits/exception_defines.h:
 
-/usr/include/c++/6/ext/type_traits.h:
+/usr/include/c++/8.2.1/bits/cpp_type_traits.h:
 
-/usr/include/c++/6/ext/numeric_traits.h:
+/usr/include/c++/8.2.1/ext/type_traits.h:
 
-/usr/include/c++/6/bits/stl_pair.h:
+/usr/include/c++/8.2.1/ext/numeric_traits.h:
 
-/usr/include/c++/6/bits/move.h:
+/usr/include/c++/8.2.1/bits/stl_pair.h:
 
-/usr/include/c++/6/bits/concept_check.h:
+/usr/include/c++/8.2.1/bits/move.h:
 
-/usr/include/c++/6/type_traits:
+/usr/include/c++/8.2.1/bits/concept_check.h:
 
-/usr/include/c++/6/bits/stl_iterator_base_types.h:
+/usr/include/c++/8.2.1/type_traits:
 
-/usr/include/c++/6/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/8.2.1/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/6/debug/assertions.h:
+/usr/include/c++/8.2.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/6/bits/stl_iterator.h:
+/usr/include/c++/8.2.1/debug/assertions.h:
 
-/usr/include/c++/6/bits/ptr_traits.h:
+/usr/include/c++/8.2.1/bits/stl_iterator.h:
 
-/usr/include/c++/6/debug/debug.h:
+/usr/include/c++/8.2.1/bits/ptr_traits.h:
 
-/usr/include/c++/6/bits/predefined_ops.h:
+/usr/include/c++/8.2.1/debug/debug.h:
 
-/usr/include/c++/6/bits/postypes.h:
+/usr/include/c++/8.2.1/bits/predefined_ops.h:
 
-/usr/include/c++/6/cwchar:
+/usr/include/c++/8.2.1/bits/postypes.h:
+
+/usr/include/c++/8.2.1/cwchar:
 
 /usr/include/wchar.h:
 
-/usr/include/stdio.h:
+/usr/include/bits/libc-header-start.h:
 
-/usr/lib/gcc/i686-linux-gnu/6/include/stdarg.h:
+/usr/include/bits/floatn.h:
 
-/usr/include/i386-linux-gnu/bits/wchar.h:
+/usr/include/bits/floatn-common.h:
 
-/usr/lib/gcc/i686-linux-gnu/6/include/stddef.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stddef.h:
 
-/usr/include/xlocale.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stdarg.h:
 
-/usr/include/c++/6/cstdint:
+/usr/include/bits/wchar.h:
 
-/usr/lib/gcc/i686-linux-gnu/6/include/stdint.h:
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/c++/8.2.1/cstdint:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include/stdint.h:
 
 /usr/include/stdint.h:
 
-/usr/include/c++/6/bits/allocator.h:
+/usr/include/bits/types.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/c++allocator.h:
+/usr/include/bits/typesizes.h:
 
-/usr/include/c++/6/ext/new_allocator.h:
+/usr/include/bits/stdint-intn.h:
 
-/usr/include/c++/6/new:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/c++/6/exception:
+/usr/include/c++/8.2.1/bits/allocator.h:
 
-/usr/include/c++/6/bits/atomic_lockfree_defines.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
-/usr/include/c++/6/bits/exception_ptr.h:
+/usr/include/c++/8.2.1/ext/new_allocator.h:
 
-/usr/include/c++/6/bits/nested_exception.h:
+/usr/include/c++/8.2.1/new:
 
-/usr/include/c++/6/bits/localefwd.h:
+/usr/include/c++/8.2.1/exception:
 
-/usr/include/i386-linux-gnu/c++/6/bits/c++locale.h:
+/usr/include/c++/8.2.1/bits/exception.h:
 
-/usr/include/c++/6/clocale:
+/usr/include/c++/8.2.1/bits/exception_ptr.h:
+
+/usr/include/c++/8.2.1/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/8.2.1/typeinfo:
+
+/usr/include/c++/8.2.1/bits/hash_bytes.h:
+
+/usr/include/c++/8.2.1/bits/nested_exception.h:
+
+/usr/include/c++/8.2.1/bits/localefwd.h:
+
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/8.2.1/clocale:
 
 /usr/include/locale.h:
 
-/usr/include/i386-linux-gnu/bits/locale.h:
+/usr/include/bits/locale.h:
 
-/usr/include/c++/6/iosfwd:
+/usr/include/c++/8.2.1/iosfwd:
 
-/usr/include/c++/6/cctype:
+/usr/include/c++/8.2.1/cctype:
 
 /usr/include/ctype.h:
 
-/usr/include/i386-linux-gnu/bits/types.h:
-
-/usr/include/i386-linux-gnu/bits/typesizes.h:
-
 /usr/include/endian.h:
 
-/usr/include/i386-linux-gnu/bits/endian.h:
+/usr/include/bits/endian.h:
 
-/usr/include/i386-linux-gnu/bits/byteswap.h:
+/usr/include/bits/byteswap.h:
 
-/usr/include/i386-linux-gnu/bits/byteswap-16.h:
+/usr/include/bits/uintn-identity.h:
 
-/usr/include/c++/6/bits/ostream_insert.h:
+/usr/include/c++/8.2.1/bits/ostream_insert.h:
 
-/usr/include/c++/6/bits/cxxabi_forced.h:
+/usr/include/c++/8.2.1/bits/cxxabi_forced.h:
 
-/usr/include/c++/6/bits/stl_function.h:
+/usr/include/c++/8.2.1/bits/stl_function.h:
 
-/usr/include/c++/6/backward/binders.h:
+/usr/include/c++/8.2.1/backward/binders.h:
 
-/usr/include/c++/6/bits/range_access.h:
+/usr/include/c++/8.2.1/bits/range_access.h:
 
-/usr/include/c++/6/initializer_list:
+/usr/include/c++/8.2.1/initializer_list:
 
-/usr/include/c++/6/bits/basic_string.h:
+/usr/include/c++/8.2.1/bits/basic_string.h:
 
-/usr/include/c++/6/ext/atomicity.h:
+/usr/include/c++/8.2.1/ext/atomicity.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/gthr.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/gthr-default.h:
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
 /usr/include/pthread.h:
 
 /usr/include/sched.h:
 
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/cpu-set.h:
+
 /usr/include/time.h:
 
-/usr/include/i386-linux-gnu/bits/sched.h:
+/usr/include/bits/time.h:
 
-/usr/include/i386-linux-gnu/bits/time.h:
+/usr/include/bits/timex.h:
 
-/usr/include/i386-linux-gnu/bits/timex.h:
+/usr/include/bits/types/struct_timeval.h:
 
-/usr/include/i386-linux-gnu/bits/pthreadtypes.h:
+/usr/include/bits/types/clock_t.h:
 
-/usr/include/i386-linux-gnu/bits/setjmp.h:
+/usr/include/bits/types/struct_tm.h:
 
-/usr/include/i386-linux-gnu/c++/6/bits/atomic_word.h:
+/usr/include/bits/types/clockid_t.h:
 
-/usr/include/c++/6/ext/alloc_traits.h:
+/usr/include/bits/types/timer_t.h:
 
-/usr/include/c++/6/bits/alloc_traits.h:
+/usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/6/ext/string_conversions.h:
+/usr/include/bits/pthreadtypes.h:
 
-/usr/include/c++/6/cstdlib:
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/8.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/8.2.1/ext/alloc_traits.h:
+
+/usr/include/c++/8.2.1/bits/alloc_traits.h:
+
+/usr/include/c++/8.2.1/ext/string_conversions.h:
+
+/usr/include/c++/8.2.1/cstdlib:
 
 /usr/include/stdlib.h:
 
-/usr/include/i386-linux-gnu/bits/waitflags.h:
+/usr/include/bits/waitflags.h:
 
-/usr/include/i386-linux-gnu/bits/waitstatus.h:
+/usr/include/bits/waitstatus.h:
 
-/usr/include/i386-linux-gnu/sys/types.h:
+/usr/include/sys/types.h:
 
-/usr/include/i386-linux-gnu/sys/select.h:
+/usr/include/sys/select.h:
 
-/usr/include/i386-linux-gnu/bits/select.h:
+/usr/include/bits/select.h:
 
-/usr/include/i386-linux-gnu/bits/sigset.h:
+/usr/include/bits/types/sigset_t.h:
 
-/usr/include/i386-linux-gnu/sys/sysmacros.h:
+/usr/include/bits/types/__sigset_t.h:
 
 /usr/include/alloca.h:
 
-/usr/include/i386-linux-gnu/bits/stdlib-bsearch.h:
+/usr/include/bits/stdlib-bsearch.h:
 
-/usr/include/i386-linux-gnu/bits/stdlib-float.h:
+/usr/include/bits/stdlib-float.h:
 
-/usr/include/c++/6/cstdio:
+/usr/include/c++/8.2.1/bits/std_abs.h:
 
-/usr/include/libio.h:
+/usr/include/c++/8.2.1/cstdio:
 
-/usr/include/_G_config.h:
+/usr/include/stdio.h:
 
-/usr/include/i386-linux-gnu/bits/stdio_lim.h:
+/usr/include/bits/types/__fpos_t.h:
 
-/usr/include/i386-linux-gnu/bits/sys_errlist.h:
+/usr/include/bits/types/__fpos64_t.h:
 
-/usr/include/i386-linux-gnu/bits/stdio.h:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/c++/6/cerrno:
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/8.2.1/cerrno:
 
 /usr/include/errno.h:
 
-/usr/include/i386-linux-gnu/bits/errno.h:
+/usr/include/bits/errno.h:
 
 /usr/include/linux/errno.h:
 
-/usr/include/i386-linux-gnu/asm/errno.h:
+/usr/include/asm/errno.h:
 
 /usr/include/asm-generic/errno.h:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/6/bits/functional_hash.h:
+/usr/include/bits/types/error_t.h:
 
-/usr/include/c++/6/bits/hash_bytes.h:
+/usr/include/c++/8.2.1/bits/functional_hash.h:
 
-/usr/include/c++/6/bits/basic_string.tcc:
+/usr/include/c++/8.2.1/bits/basic_string.tcc:
 
 ../lib/EventHandler.hh:
 
@@ -371,21 +449,23 @@ Clientmenu.hh:
 
 ../lib/Util.hh:
 
-/usr/lib/gcc/i686-linux-gnu/6/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/limits.h:
 
-/usr/lib/gcc/i686-linux-gnu/6/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
-/usr/include/i386-linux-gnu/bits/posix1_lim.h:
+/usr/include/bits/posix1_lim.h:
 
-/usr/include/i386-linux-gnu/bits/local_lim.h:
+/usr/include/bits/local_lim.h:
 
 /usr/include/linux/limits.h:
 
-/usr/include/i386-linux-gnu/bits/posix2_lim.h:
+/usr/include/bits/posix2_lim.h:
 
-/usr/include/i386-linux-gnu/bits/xopen_lim.h:
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/uio_lim.h:
 
 /usr/include/X11/Xutil.h:
 
@@ -399,57 +479,57 @@ Clientmenu.hh:
 
 ../lib/Timer.hh:
 
-/usr/include/c++/6/algorithm:
+/usr/include/c++/8.2.1/algorithm:
 
-/usr/include/c++/6/utility:
+/usr/include/c++/8.2.1/utility:
 
-/usr/include/c++/6/bits/stl_relops.h:
+/usr/include/c++/8.2.1/bits/stl_relops.h:
 
-/usr/include/c++/6/bits/stl_algo.h:
+/usr/include/c++/8.2.1/bits/stl_algo.h:
 
-/usr/include/c++/6/bits/algorithmfwd.h:
+/usr/include/c++/8.2.1/bits/algorithmfwd.h:
 
-/usr/include/c++/6/bits/stl_heap.h:
+/usr/include/c++/8.2.1/bits/stl_heap.h:
 
-/usr/include/c++/6/bits/stl_tempbuf.h:
+/usr/include/c++/8.2.1/bits/stl_tempbuf.h:
 
-/usr/include/c++/6/bits/stl_construct.h:
+/usr/include/c++/8.2.1/bits/stl_construct.h:
 
-/usr/include/c++/6/bits/uniform_int_dist.h:
+/usr/include/c++/8.2.1/bits/uniform_int_dist.h:
 
-/usr/include/c++/6/limits:
+/usr/include/c++/8.2.1/limits:
 
-/usr/include/c++/6/queue:
+/usr/include/c++/8.2.1/queue:
 
-/usr/include/c++/6/deque:
+/usr/include/c++/8.2.1/deque:
 
-/usr/include/c++/6/bits/stl_uninitialized.h:
+/usr/include/c++/8.2.1/bits/stl_uninitialized.h:
 
-/usr/include/c++/6/bits/stl_deque.h:
+/usr/include/c++/8.2.1/bits/stl_deque.h:
 
-/usr/include/c++/6/bits/deque.tcc:
+/usr/include/c++/8.2.1/bits/deque.tcc:
 
-/usr/include/c++/6/vector:
+/usr/include/c++/8.2.1/vector:
 
-/usr/include/c++/6/bits/stl_vector.h:
+/usr/include/c++/8.2.1/bits/stl_vector.h:
 
-/usr/include/c++/6/bits/stl_bvector.h:
+/usr/include/c++/8.2.1/bits/stl_bvector.h:
 
-/usr/include/c++/6/bits/vector.tcc:
+/usr/include/c++/8.2.1/bits/vector.tcc:
 
-/usr/include/c++/6/bits/stl_queue.h:
+/usr/include/c++/8.2.1/bits/stl_queue.h:
 
-/usr/include/c++/6/bits/uses_allocator.h:
+/usr/include/c++/8.2.1/bits/uses_allocator.h:
 
-/usr/include/c++/6/list:
+/usr/include/c++/8.2.1/list:
 
-/usr/include/c++/6/bits/stl_list.h:
+/usr/include/c++/8.2.1/bits/stl_list.h:
 
-/usr/include/c++/6/bits/allocated_ptr.h:
+/usr/include/c++/8.2.1/bits/allocated_ptr.h:
 
-/usr/include/c++/6/ext/aligned_buffer.h:
+/usr/include/c++/8.2.1/ext/aligned_buffer.h:
 
-/usr/include/c++/6/bits/list.tcc:
+/usr/include/c++/8.2.1/bits/list.tcc:
 
 Window.hh:
 
@@ -479,21 +559,23 @@ blackbox.hh:
 
 ../lib/Application.hh:
 
-/usr/include/c++/6/map:
+/usr/include/c++/8.2.1/map:
 
-/usr/include/c++/6/bits/stl_tree.h:
+/usr/include/c++/8.2.1/bits/stl_tree.h:
 
-/usr/include/c++/6/bits/stl_map.h:
+/usr/include/c++/8.2.1/bits/stl_map.h:
 
-/usr/include/c++/6/tuple:
+/usr/include/c++/8.2.1/tuple:
 
-/usr/include/c++/6/array:
+/usr/include/c++/8.2.1/array:
 
-/usr/include/c++/6/stdexcept:
+/usr/include/c++/8.2.1/stdexcept:
 
-/usr/include/c++/6/bits/stl_multimap.h:
+/usr/include/c++/8.2.1/bits/invoke.h:
 
-/usr/include/c++/6/cstring:
+/usr/include/c++/8.2.1/bits/stl_multimap.h:
+
+/usr/include/c++/8.2.1/cstring:
 
 /usr/include/string.h:
 
