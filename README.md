@@ -29,6 +29,13 @@ Install the following dependencies:
 ```bash
 $ sudo apt-get install xorg xorg-dev
 ```
+If you are running an Arch Linux distribution, the pacman package manager has 
+```xorg-server-devel``` as a package under the <b>xorg</b> group. There for if you're 
+running arch linux, all you need to run is:
+```bash
+$ sudo pacman -S xorg
+```
+
 The quickest and easiest way to get Blackbox up and running is to run the
 following commands:
 
