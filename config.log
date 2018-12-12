@@ -670,7 +670,7 @@ configure:20324: $? = 0
 configure:20331: result: yes
 configure:20343: checking for t_open in -lnsl
 configure:20373: g++ -o conftest -g -O2  -I/usr/local/include  -L/usr/local/lib conftest.cc -lnsl   >&5
-/usr/bin/ld: /tmp/cctRUgXH.o: in function `main':
+/usr/bin/ld: /tmp/cc1Wrx3H.o: in function `main':
 /home/kroelld/kroelld.git/zebx/conftest.cc:39: undefined reference to `t_open'
 collect2: error: ld returned 1 exit status
 configure:20379: $? = 1
