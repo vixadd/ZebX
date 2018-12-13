@@ -21,7 +21,7 @@ make
 sudo make install
 
 # publish the output to a new .xinitrc file in the Home directory
-cp zebx.configs/.xinitrc.config        ~/.xinit
+cp zebx.configs/.xinitrc.config        ~/.xinitrc
 cp zebx.configs/.Xresources.config   ~/.Xresources
 
 
