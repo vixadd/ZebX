@@ -1,8 +1,0 @@
-#!/usr/bin/make -f
-
-export PYBUILD_DESTDIR=debian/kano-greeter/
-
-%:
-	cd po && make
-	cd po && make messages.pot
-	dh $@ --with python2  --buildsystem=pybuild

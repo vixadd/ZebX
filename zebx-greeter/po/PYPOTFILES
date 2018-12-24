@@ -1,9 +1,0 @@
-../bin/kano-greeter
-../kano_greeter/greeter_window.py
-../kano_greeter/password_view.py
-../kano_greeter/user_list.py
-../kano_greeter/newuser_view.py
-../kano_greeter/__init__.py
-../kano_greeter/last_user.py
-../kano_greeter/login_with_kw_view.py
-../kano_greeter/paths.py
