@@ -1,0 +1,140 @@
+#!/usr/bin/env python
+
+# kano-greeter-account
+#
+# Copyright (C) 2015-2016 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+#
+# Script to create a local Unix user account and force password
+# Called from Kano Greeter UI via sudo.
+#
+# TODO: This tool is temporary until kano-init provides a sudoable equivalent approach
+# Return codes:
+#    0=new account created successfully
+#    1=account already exists - password has been forced
+#    2=could not create new account
+#
+
+import os
+import sys
+
+from kano.utils import enforce_root, run_cmd
+from kano_init.user import user_exists
+from kano.logging import logger
+
+
+def skip_init_flow(username):
+    '''
+    Tell Kano init-flow that this user does not need to go
+    through the initial interactive setup stage. Returns True on success
+    '''
+    init_flow_first_boot='/home/{}/.kano-settings/first_boot'.format(username)
+
+    # create directory if needed, control file, and set file ownership to user
+    cmd = "mkdir -p {} ; touch {} ; chown -R {}:{} {}".format(
+        os.path.dirname(init_flow_first_boot), init_flow_first_boot,
+        username, username, os.path.dirname(init_flow_first_boot))
+
+    _, _, rv = run_cmd(cmd)
+    if rv:
+        logger.error('error creating init_flow skip boot file {} rc={}'.format(init_flow_first_boot, rv))
+
+    return (rv == 0)
+
+
+def login_kano_world(unix_username, world_username, world_password):
+    '''
+    Impersonates as unix_username, attempts a login into Kano World
+    using world_username and world_password credentials.
+    Finally it synchronizes World data locally. Returns True if Kano World login succeeds
+    '''
+    cmd_world_login='su - {} -c \"python -c \\"from kano_world.functions import login; ' \
+        'print login(\'{}\', \'{}\')\\"\"'.format(
+        unix_username, world_username, password)
+
+    r, e, rv = run_cmd(cmd_world_login)
+    if rv:
+        logger.error('Error authenticating to kano world rc={} response {} errors {}'.format(rv, r, e))
+
+    sync_cmd = 'su - {} -c "/usr/bin/kano-sync --sync -s"'.format(unix_username)
+    sync_restore_cmd = 'su - {} -c "/usr/bin/kano-sync --restore -s"'.format(unix_username)
+
+    _, _, rc1 = run_cmd(sync_cmd)
+    _, _, rc2 = run_cmd(sync_cmd)
+    _, _, rc3 = run_cmd(sync_restore_cmd)
+
+    logger.debug('Kano world synchronization steps rc1={} rc2={} rc3={}'.format(rc1, rc2, rc3))
+
+    return (rv == 0)
+
+
+def create_user(username, password, world_username):
+    DEFAULT_USER_GROUPS = "tty,adm,dialout,cdrom,audio,users,sudo,video,games," + \
+                          "plugdev,input,kanousers,i2c"
+
+    # User already exists, force password and stop here
+    if user_exists(username):
+        force_password(username, password)
+        skip_init_flow(username)
+        login_kano_world(username, world_username, password)
+        return 1
+
+    # Add the new Unix user on the system
+    umask_override = '0077'
+    cmd = "useradd -m -K UMASK={} -s /bin/bash {}".format(umask_override, username)
+    _, _, rv = run_cmd(cmd)
+    if rv:
+        return 2
+
+    # Force the account password
+    if not force_password(username, password):
+        # Cannot force a password, login would not succeed: so rollback
+        delete_user(username)
+        return 2
+
+    # Add the new user to all necessary groups
+    cmd = "usermod -G '{}' {}".format(DEFAULT_USER_GROUPS, username)
+    _, _, rv = run_cmd(cmd)
+
+    # Tell init-flow to skip interactive setup for this user
+    skip_init_flow(username)
+    login_kano_world(username, world_username, password)
+
+    if rv==0:
+       return 0
+    else:
+       return 2
+
+
+def force_password(username, password):
+    cmd = "echo '{}:{}' | chpasswd".format(username, password)
+    _, _, rv = run_cmd(cmd)
+    return (rv==0)
+
+
+def delete_user(username):
+    # kill all process from the user
+    run_cmd("killall -KILL -u {}".format(username))
+    _, _, rv = run_cmd_log("userdel -r {}".format(username))
+    return (rv==0)
+
+
+if __name__ == '__main__':
+
+    # Validate and collect command line options
+    enforce_root('You must be root to use {}'.format(sys.argv[0]))
+    if len(sys.argv) > 3:
+        username=sys.argv[1]
+        password=sys.argv[2]
+        world_username=sys.argv[3]
+    else:
+        logger.error('invalid parameters - syntax: kano-greeter-account <username> <password> <world_username>')
+        sys.exit(1)
+
+    # Create local user and force the password
+    try:
+        rc=create_user(username, password, world_username)
+    except:
+        rc=2
+
+    sys.exit(rc)

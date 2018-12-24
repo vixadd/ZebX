@@ -1,5 +1,0 @@
-[Desktop]
-Name=ZebX Greeter
-Comment=ZebX Greeter
-Exec=zebx_greeter.py
-Type=Application

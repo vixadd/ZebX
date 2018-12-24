@@ -1,0 +1,13 @@
+# .kdeskrc
+#
+# Copyright (C) 2014 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+#
+#
+
+
+table Config
+    Background.File-medium: /usr/share/kano-greeter/wallpapers/greeter-background-1024.png
+    Background.File-4-3: /usr/share/kano-greeter/wallpapers/greeter-background-4-3.png
+    Background.File-16-9: /usr/share/kano-greeter/wallpapers/greeter-background-16-9.png
+end
