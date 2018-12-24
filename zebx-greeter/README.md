@@ -1,4 +1,5 @@
-# kano-greeter
+# ZebX Greeter
+## kano-greeter
 
 Python greeter for Kano OS. Uses LightDM to handle user sessions.
 
