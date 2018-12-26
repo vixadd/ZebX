@@ -1,4 +1,8 @@
-// TODO - Documentation
+//-----------------------------------------------\\
+//  Font handler and controller for the display. \\
+//                                               \\
+//              Author: David Kroell             \\
+//-----------------------------------------------\\
 
 #include "Font.hh"
 #include "Color.hh"
